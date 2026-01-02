@@ -68,7 +68,7 @@ export function Footer() {
             </h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                <MapPin className="w-5 h-5 shrink-0 mt-0.5 text-white" />
                 <span>123 Medical Plaza, Health District,<br />New York, NY 10001</span>
               </li>
               <li className="flex items-center gap-3">

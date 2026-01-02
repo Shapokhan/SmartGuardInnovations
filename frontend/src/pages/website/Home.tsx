@@ -76,7 +76,7 @@ export function Home() {
                      </div>
                    </div>
                    <div className="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
-                     <div className="h-full bg-green-500 w-[92%]"></div>
+                     <div className="h-full bg-green-500 w-[50%]"></div>
                    </div>
                  </div>
                </div>
@@ -112,7 +112,7 @@ export function Home() {
             <Button size="lg" variant="secondary" className="rounded-full px-10 h-14 text-primary font-bold text-lg hover:bg-white">
               Request Demo
             </Button>
-            <Button size="lg" variant="outline" className="rounded-full px-10 h-14 text-white border-white/30 hover:bg-white/10 font-bold text-lg">
+            <Button size="lg" variant="outline" className="rounded-full px-10 h-14 text-black border-white/30 hover:bg-white/10 font-bold text-lg hover:text-white">
               Contact Sales
             </Button>
           </div>
