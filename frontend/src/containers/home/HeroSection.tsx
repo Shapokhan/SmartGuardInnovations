@@ -24,7 +24,7 @@ const HeroSection = () => {
             </div>
 
             <div className="container relative z-20 mx-auto px-4 sm:px-6 lg:px-8 mt-10">
-                <div className="max-w-3xl py-12 lg:py-24">
+                <div className="max-w-3xl py-12 lg:py-10">
                     {/* Badge */}
                     <div className="inline-block rounded-full bg-[#0C6E6D] px-6 py-2 text-[10px] sm:text-xs font-black tracking-[0.2em] uppercase text-white shadow-xl mb-8">
                         EXPERIENCE HEALTHCARE
@@ -32,9 +32,9 @@ const HeroSection = () => {
                     
                     {/* Heading - text-4xl as requested */}
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.2] text-white">
-                        <span className="font-extrabold text-[#7AFFC7]">Trusted</span> <span className="font-light">Marketing</span><br />
+                        <span className="font-extrabold ">Trusted</span> <span className="font-light">Marketing</span><br />
                         <span className="font-extrabold">Consulting</span> <span className="font-light">Agency</span><br />
-                        <span className="font-light">for</span> <span className="font-extrabold underline decoration-[#0C6E6D] decoration-4 underline-offset-8">Business.</span>
+                        <span className="font-light">for Business.</span> 
                     </h1>
                     
                     {/* Description */}

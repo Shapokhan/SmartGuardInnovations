@@ -3,7 +3,7 @@ import cardImg from '@/assets/images/card-img.png';
 
 const FeaturesSection = () => {
     return (
-        <section className="py-24 bg-gray-50">
+        <section className="py-10 bg-gray-50">
             <div className="container mx-auto px-4">
                  <div className="text-center max-w-2xl mx-auto mb-16">
                     <h2 className="text-4xl font-extrabold text-[#053131] leading-tight mb-4">

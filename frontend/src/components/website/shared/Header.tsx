@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Mail, Phone, Facebook, Youtube, Instagram, Menu, X, ArrowRight } from 'lucide-react';
+import { FaFacebookF, FaYoutube, FaInstagram, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { RiMenu3Line, RiCloseLine, RiArrowRightLine } from 'react-icons/ri';
+import { RiWhatsappFill } from "react-icons/ri";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,7 +31,7 @@ const Header = () => {
                     {/* Left: Email */}
                     <div className="flex items-center gap-2.5 group cursor-pointer">
                         <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-[#0C6E6D] transition-all duration-300">
-                            <Mail className="h-4 w-4 text-white" />
+                            <FaEnvelope className="h-3.5 w-3.5 text-white" />
                         </div>
                         <span className="text-[11px] font-semibold tracking-wide">Email: info@domainname.com</span>
                     </div>
@@ -39,13 +41,13 @@ const Header = () => {
                         {/* Social Icons */}
                         <div className="flex items-center gap-4">
                              <div className="w-8 h-8 flex items-center justify-center hover:bg-[#0C6E6D] rounded-lg transition-all cursor-pointer bg-white/5">
-                                <Facebook className="h-4 w-4 text-white" />
+                                <FaFacebookF className="h-3.5 w-3.5 text-white" />
                              </div>
                              <div className="w-8 h-8 flex items-center justify-center hover:bg-[#0C6E6D] rounded-lg transition-all cursor-pointer bg-white/5">
-                                <Instagram className="h-4 w-4 text-white" />
+                                <FaInstagram className="h-4 w-4 text-white" />
                              </div>
                              <div className="w-8 h-8 flex items-center justify-center hover:bg-[#0C6E6D] rounded-lg transition-all cursor-pointer bg-white/5">
-                                <Youtube className="h-4 w-4 text-white" />
+                                <FaYoutube className="h-4 w-4 text-white" />
                              </div>
                         </div>
 
@@ -55,7 +57,7 @@ const Header = () => {
                         {/* Phone */}
                         <div className="flex items-center gap-2.5 group cursor-pointer">
                             <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-[#0C6E6D] transition-all duration-300">
-                                <Phone className="h-4 w-4 text-white" />
+                                <RiWhatsappFill className="size-5 text-white" />
                             </div>
                             <span className="text-[11px] font-bold tracking-wide">Contact: +123 (456) 789</span>
                         </div>
@@ -95,7 +97,7 @@ const Header = () => {
                         className="lg:hidden text-[#053131] p-2 hover:bg-gray-100 rounded-xl transition-all"
                         onClick={() => setIsMenuOpen(true)}
                     >
-                        <Menu className="w-8 h-8" />
+                        <RiMenu3Line className="w-8 h-8" />
                     </button>
                 </div>
             </div>
@@ -115,7 +117,7 @@ const Header = () => {
                                     onClick={() => setIsMenuOpen(false)} 
                                     className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-all"
                                 >
-                                    <X className="w-6 h-6 text-white" />
+                                    <RiCloseLine className="w-6 h-6 text-white" />
                                 </button>
                         </div>
 
@@ -128,7 +130,7 @@ const Header = () => {
                                         onClick={() => setIsMenuOpen(false)}
                                     >
                                         {item.name}
-                                        <ArrowRight className="w-5 h-5 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+                                        <RiArrowRightLine className="w-5 h-5 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
                                     </a>
                             ))}
                         </nav>
@@ -139,8 +141,8 @@ const Header = () => {
                             </button>
                             
                             <div className="flex justify-center gap-8">
-                                <Facebook className="w-6 h-6 text-white/60 hover:text-white transition-colors cursor-pointer" />
-                                <Youtube className="w-6 h-6 text-white/60 hover:text-white transition-colors cursor-pointer" />
+                                <FaFacebookF className="w-5 h-5 text-white/60 hover:text-white transition-colors cursor-pointer" />
+                                <FaYoutube className="w-6 h-6 text-white/60 hover:text-white transition-colors cursor-pointer" />
                             </div>
                         </div>
                     </div>

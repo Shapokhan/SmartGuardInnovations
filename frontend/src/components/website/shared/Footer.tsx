@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Facebook, Youtube, Instagram } from 'lucide-react';
+import { FaFacebookF, FaYoutube, FaInstagram, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -41,19 +41,19 @@ const Footer = () => {
                         <ul className="space-y-4 text-white/70 text-sm font-medium">
                             <li className="flex items-center gap-3 group cursor-pointer">
                                 <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-[#0C6E6D] transition-colors">
-                                    <Mail className="w-4 h-4 text-white" />
+                                    <FaEnvelope className="w-3.5 h-3.5 text-white" />
                                 </div>
                                 <span className="group-hover:text-white transition-colors">Email: info@domainname.com</span>
                             </li>
                             <li className="flex items-start gap-3 group cursor-pointer">
                                 <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-[#0C6E6D] transition-colors">
-                                    <MapPin className="w-4 h-4 text-white" />
+                                    <FaMapMarkerAlt className="w-3.5 h-3.5 text-white" />
                                 </div>
                                 <span className="group-hover:text-white transition-colors">Location: 123 Business Street, NY</span>
                             </li>
                             <li className="flex items-center gap-3 group cursor-pointer">
                                 <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-[#0C6E6D] transition-colors">
-                                    <Phone className="w-4 h-4 text-white" />
+                                    <FaPhoneAlt className="w-3 h-3 text-white" />
                                 </div>
                                 <span className="group-hover:text-white transition-colors">Contact: +123 (456) 789</span>
                             </li>
@@ -64,13 +64,13 @@ const Footer = () => {
                 <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-white/50">
                     <div className="flex gap-4 order-2 md:order-1">
                          <div className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#0C6E6D] hover:text-white text-white/50 transition-all cursor-pointer">
-                            <Facebook className="w-4 h-4" />
+                            <FaFacebookF className="w-3.5 h-3.5" />
                          </div>
                          <div className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#7AFFC7] hover:text-[#053131] text-white/50 transition-all cursor-pointer">
-                            <Instagram className="w-4 h-4" />
+                            <FaInstagram className="w-4 h-4" />
                          </div>
                          <div className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-red-500 hover:text-white text-white/50 transition-all cursor-pointer">
-                            <Youtube className="w-4 h-4" />
+                            <FaYoutube className="w-4 h-4" />
                          </div>
                     </div>
                     

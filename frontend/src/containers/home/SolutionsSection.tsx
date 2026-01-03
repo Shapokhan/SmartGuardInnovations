@@ -1,5 +1,5 @@
-
 import circleImg from '@/assets/images/circle-img.png';
+import polyBg from '@/assets/images/polygon-swish.png';
 import { Button } from '@/components/ui/button';
 
 const solutions = [
@@ -11,9 +11,17 @@ const solutions = [
 
 const SolutionsSection = () => {
     return (
-        <section className="py-24 bg-white relative overflow-hidden">
+        <section className="  relative overflow-hidden max-w-[1280px] rounded-2xl py-5 mx-auto">
+            {/* Background Image */}
+            <div className="absolute  z-10 l">
+                <img 
+                    src={polyBg} 
+                    alt="Background" 
+                    className="w-full h-full object-[100%_100%] shadow-x "
+                />
+            </div>
              {/* Particle/Network background effect from XD */}
-             <div className="absolute inset-0 z-0 opacity-[0.03] pointer-events-none">
+             <div className="absolute inset-0 z-0 pointer-events-none">
                 <svg className="w-full h-full" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
                     {[...Array(10)].map((_, i) => (
                         <circle key={i} cx={Math.random() * 1000} cy={Math.random() * 1000} r="2" fill="currentColor" />
@@ -21,9 +29,9 @@ const SolutionsSection = () => {
                 </svg>
             </div>
 
-            <div className="container relative z-10 mx-auto px-4">
+            <div className="container relative z-10 mx-auto ">
                 {/* Section Header */}
-                <div className="text-center max-w-2xl mx-auto mb-20">
+                <div className="text-center max-w-2xl mx-auto mb-5 pt-10">
                     <h2 className="text-4xl lg:text-5xl font-extrabold text-[#053131] leading-tight mb-6">
                         <span className="font-extrabold">Trusted</span> <span className="font-light">Marketing</span> <span className="font-extrabold">Consulting</span><br />
                         <span className="font-light">agency for business.</span>
@@ -36,7 +44,7 @@ const SolutionsSection = () => {
                 {/* Timeline Grid */}
                 <div className="relative">
                     {/* Horizontal Line background */}
-                    <div className="absolute top-[45%] left-0 w-full h-0.5 bg-gray-100 -z-0 hidden md:block"></div>
+                    <div className="absolute top-[60%]  rounded-full left-[5%] w-[90%] mx-auto h-1 bg-[#053131] -z-0 hidden md:block"></div>
                     
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
                         {solutions.map((item, idx) => (
