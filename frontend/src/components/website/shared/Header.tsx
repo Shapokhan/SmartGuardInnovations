@@ -28,18 +28,26 @@ const Header = () => {
             {/* Top Bar */}
             <div className="bg-[#053131] py-2.5 text-white/95 border-b border-white/5">
                 <div className="container mx-auto flex items-center justify-between px-4">
-                    {/* Left: Email */}
-                    <div className="flex items-center gap-2.5 group cursor-pointer">
+                    {/* Left: Email - Hidden on extra small mobile */}
+                    <div className="hidden sm:flex items-center gap-2.5 group cursor-pointer">
                         <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-[#0C6E6D] transition-all duration-300">
                             <FaEnvelope className="h-3.5 w-3.5 text-white" />
                         </div>
                         <span className="text-[11px] font-semibold tracking-wide">Email: info@domainname.com</span>
                     </div>
+
+                    {/* Left: Phone - Visible on mobile when email is hidden */}
+                    <div className="flex sm:hidden items-center gap-2.5 group cursor-pointer">
+                         <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-[#0C6E6D] transition-all duration-300">
+                            <RiWhatsappFill className="size-5 text-white" />
+                        </div>
+                        <span className="text-[10px] font-bold tracking-wide">Contact Us</span>
+                    </div>
                     
-                    {/* Right: Social & Phone */}
-                    <div className="flex items-center gap-8">
-                        {/* Social Icons */}
-                        <div className="flex items-center gap-4">
+                    {/* Right: Social & Phone - Hide social on small mobile */}
+                    <div className="flex items-center gap-4 sm:gap-8">
+                        {/* Social Icons - Hidden on mobile */}
+                        <div className="hidden md:flex items-center gap-4">
                              <div className="w-8 h-8 flex items-center justify-center hover:bg-[#0C6E6D] rounded-lg transition-all cursor-pointer bg-white/5">
                                 <FaFacebookF className="h-3.5 w-3.5 text-white" />
                              </div>
@@ -51,15 +59,21 @@ const Header = () => {
                              </div>
                         </div>
 
-                        {/* Divider */}
-                        <div className="h-5 w-px bg-white/20"></div>
+                        {/* Divider - Hidden on mobile */}
+                        <div className="hidden md:block h-5 w-px bg-white/20"></div>
 
-                        {/* Phone */}
-                        <div className="flex items-center gap-2.5 group cursor-pointer">
+                        {/* Phone - Always visible but smaller on mobile */}
+                        <div className="hidden sm:flex items-center gap-2.5 group cursor-pointer">
                             <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-[#0C6E6D] transition-all duration-300">
                                 <RiWhatsappFill className="size-5 text-white" />
                             </div>
                             <span className="text-[11px] font-bold tracking-wide">Contact: +123 (456) 789</span>
+                        </div>
+
+                        {/* Social Icons for Mobile - Smaller version */}
+                        <div className="flex md:hidden items-center gap-3">
+                             <FaFacebookF className="h-4 w-4 text-white/80" />
+                             <FaInstagram className="h-4 w-4 text-white/80" />
                         </div>
                     </div>
                 </div>
@@ -69,7 +83,7 @@ const Header = () => {
             <div className={`bg-white transition-all duration-300 ${isScrolled ? 'py-3 shadow-xl backdrop-blur-md bg-white/95' : 'py-5 shadow-sm'}`}>
                 <div className="container mx-auto flex items-center justify-between px-4">
                     {/* Logo */}
-                    <div className="text-5xl font-black tracking-tighter text-black flex flex-col leading-none">
+                    <div className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tighter text-black flex flex-col leading-none">
                         LOGO
                     </div>
 

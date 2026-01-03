@@ -11,12 +11,12 @@ const AboutSection = () => {
                     {/* Left side: Single Image */}
                     <div className="lg:w-1/2 relative flex justify-center lg:justify-start">
                         <div className="relative z-10 w-full group">
-                             <img 
-                                src={secImage} 
-                                alt="Marketing Consulting" 
-                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
-                             />
-                            
+                            <img
+                                src={secImage}
+                                alt="Marketing Consulting"
+                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            />
+
                         </div>
                     </div>
 
@@ -35,9 +35,12 @@ const AboutSection = () => {
                         {/* Benefit lines using trust-icon.png */}
                         {[1, 2, 3].map((_, idx) => (
                             <div key={idx} className="flex items-center gap-6 group">
-                                <div className="size-18 rounded-full bg-[#0C6E6D]/5 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0C6E6D] transition-colors duration-300">
-                                    <img src={trustIcon} className="size-12 group-hover:invert transition-all" alt="icon" />
-                                </div>
+                                <div className="size-[80px] rounded-full bg-[#0C6E6D]/5 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0C6E6D] transition-colors duration-300">
+                                    <img
+                                        src={trustIcon}
+                                        alt="icon"
+                                        className="size-full p-3 transition-all duration-300 group-hover:invert group-hover:brightness-0"
+                                    />                                </div>
                                 <div>
                                     <h4 className="font-extrabold text-[#053131] uppercase">Trusted Consulting</h4>
                                     <p className="text-sm text-gray-400">Experience healthcare you can trust. Our dedicated team provides compassionate, high-quality care.</p>

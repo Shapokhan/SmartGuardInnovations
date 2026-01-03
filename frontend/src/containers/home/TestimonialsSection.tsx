@@ -1,5 +1,5 @@
 
-import circleImg from '@/assets/images/circle-img.png';
+import circleImg from '@/assets/images/down-circle.png';
 
 const testimonials = [
     {
@@ -25,8 +25,8 @@ const testimonials = [
 const TestimonialsSection = () => {
     return (
         <section className="py-10 bg-white overflow-hidden">
-            <div className="container mx-auto px-4">
-                 <div className="text-center max-w-2xl mx-auto mb-20">
+            <div className="container mx-auto px-4 ">
+                <div className="text-center max-w-2xl mx-auto mb-10">
                     <h2 className="text-4xl lg:text-5xl font-extrabold text-[#053131] leading-tight mb-6 text-center">
                         <span className="font-extrabold">Trusted</span> <span className="font-light">Marketing</span> <span className="font-extrabold">Consulting</span><br />
                         <span className="font-light">agency for business.</span>
@@ -52,7 +52,7 @@ const TestimonialsSection = () => {
 
                             <div className="flex items-center gap-4 pt-4 border-t border-gray-200">
                                 <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-[#0C6E6D]/20 group-hover:border-[#0C6E6D] transition-colors">
-                                     <img src={circleImg} alt={t.name} className="w-full h-full object-cover" />
+                                    <img src={circleImg} alt={t.name} className="w-full h-full object-cover" />
                                 </div>
                                 <div>
                                     <h4 className="font-black text-[#053131] leading-none">{t.name}</h4>
@@ -65,12 +65,12 @@ const TestimonialsSection = () => {
 
                 {/* Slider controls placeholder */}
                 <div className="flex justify-center gap-4 mt-12">
-                     <button className="w-14 h-14 rounded-full border border-gray-200 flex items-center justify-center text-[#053131] hover:bg-[#0C6E6D] hover:text-white hover:border-[#0C6E6D] transition-all">
+                    <button className="w-14 h-14 rounded-full border border-gray-200 flex items-center justify-center text-[#053131] hover:bg-[#0C6E6D] hover:text-white hover:border-[#0C6E6D] transition-all">
                         <span className="text-xl">←</span>
-                     </button>
-                     <button className="w-14 h-14 rounded-full bg-[#0C6E6D] flex items-center justify-center text-white shadow-lg hover:bg-[#053131] transition-all">
+                    </button>
+                    <button className="w-14 h-14 rounded-full bg-[#0C6E6D] flex items-center justify-center text-white shadow-lg hover:bg-[#053131] transition-all">
                         <span className="text-xl">→</span>
-                     </button>
+                    </button>
                 </div>
             </div>
         </section>
