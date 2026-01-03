@@ -25,10 +25,10 @@ const testimonials = [
 
 const TestimonialsSection = () => {
     return (
-        <section className="py-10 bg-white overflow-hidden">
+        <section className="py-8 sm:py-10 bg-white overflow-hidden">
             <div className="container mx-auto px-4 ">
                 <div className="text-center max-w-2xl mx-auto mb-10">
-                    <h2 className="text-4xl lg:text-5xl font-extrabold text-[#053131] leading-tight mb-6 text-center">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#053131] leading-tight mb-6 text-center">
                         <span className="font-extrabold">Trusted</span> <span className="font-light">Marketing</span> <span className="font-extrabold">Consulting</span><br />
                         <span className="font-light">agency for business.</span>
                     </h2>

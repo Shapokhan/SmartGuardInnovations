@@ -5,10 +5,10 @@ import { Button } from '@/components/ui/button';
 
 const ServicesSection = () => {
     return (
-        <section className="py-7 bg-white">
+        <section className="py-8 sm:py-7 bg-white">
             <div className="container mx-auto p-5 rounded-4xl bg-slate-100">
                 <div className="text-center max-w-2xl mx-auto mb-10">
-                    <h2 className="text-4xl lg:text-5xl font-extrabold text-[#053131] leading-tight mb-6">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#053131] leading-tight mb-6">
                         <span className="font-extrabold text-[#053131]">Trusted</span> <span className="font-light">Marketing</span> <span className="font-extrabold text-[#053131]">Consulting</span><br />
                         <span className="font-light">agency for business.</span>
                     </h2>

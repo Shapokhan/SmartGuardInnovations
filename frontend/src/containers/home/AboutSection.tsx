@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 
 const AboutSection = () => {
     return (
-        <section className="py-10 bg-white overflow-hidden">
+        <section className="py-8 sm:py-10 bg-white overflow-hidden">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col lg:flex-row items-center gap-10">
                     {/* Left side: Single Image */}

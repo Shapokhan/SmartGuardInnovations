@@ -10,12 +10,12 @@ const Footer = () => {
                         <img src={footer_bg} alt="footer-bg " className="w-full h-full bg-[100% 100%]" />
                     </div>
 
-                    <div className="relative z-10 p-10">
+                    <div className="relative z-10 p-6 sm:p-10">
                         {/* Top: 4 Columns */}
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
                             {/* Brand Column */}
                             <div className="space-y-8">
-                                <div className="text-7xl font-black tracking-tighter text-white">LOGO</div>
+                                <div className="text-4xl sm:text-5xl lg:text-7xl font-black tracking-tighter text-white">LOGO</div>
                                 <p className="text-white/70 leading-relaxed text-sm max-w-xs">
                                     Lorem Ipsum is simply dummy text of the printing text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                                 </p>
@@ -97,7 +97,7 @@ const Footer = () => {
 
                         {/* Bottom Section */}
                         <div className="flex flex-col md:flex-row justify-between items-center gap-6 pt-4 text-sm">
-                            <p className="text-white/50 text-base">Lorem Ipsum is simply dummy text of the printing</p>
+                            <p className="text-white/50 text-sm sm:text-base">Lorem Ipsum is simply dummy text of the printing</p>
 
                             <div className="flex gap-10 items-center text-white/70">
                                 <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
