@@ -1,5 +1,6 @@
-
 import circleImg from '@/assets/images/down-circle.png';
+import { FaStar } from 'react-icons/fa6';
+import { RiArrowLeftLine, RiArrowRightLine } from 'react-icons/ri';
 
 const testimonials = [
     {
@@ -40,9 +41,9 @@ const TestimonialsSection = () => {
                     {testimonials.map((t, idx) => (
                         <div key={idx} className="bg-gray-50 rounded-[40px] p-10 space-y-8 relative shadow-sm hover:shadow-xl transition-all group">
                             {/* Stars */}
-                            <div className="flex gap-1 text-yellow-400">
+                            <div className="flex gap-1 text-yellow-500">
                                 {[...Array(t.rating)].map((_, i) => (
-                                    <span key={i} className="text-xl">★</span>
+                                    <FaStar key={i} className="text-lg" />
                                 ))}
                             </div>
 
@@ -63,13 +64,13 @@ const TestimonialsSection = () => {
                     ))}
                 </div>
 
-                {/* Slider controls placeholder */}
+                {/* Slider controls with React Icons */}
                 <div className="flex justify-center gap-4 mt-12">
-                    <button className="w-14 h-14 rounded-full border border-gray-200 flex items-center justify-center text-[#053131] hover:bg-[#0C6E6D] hover:text-white hover:border-[#0C6E6D] transition-all">
-                        <span className="text-xl">←</span>
+                    <button className="w-14 h-14 rounded-full border border-gray-200 flex items-center justify-center text-[#053131] hover:bg-[#0C6E6D] hover:text-white hover:border-[#0C6E6D] transition-all group">
+                        <RiArrowLeftLine className="text-2xl group-hover:scale-110 transition-transform" />
                     </button>
-                    <button className="w-14 h-14 rounded-full bg-[#0C6E6D] flex items-center justify-center text-white shadow-lg hover:bg-[#053131] transition-all">
-                        <span className="text-xl">→</span>
+                    <button className="w-14 h-14 rounded-full bg-[#0C6E6D] flex items-center justify-center text-white shadow-lg hover:bg-[#053131] transition-all group">
+                        <RiArrowRightLine className="text-2xl group-hover:scale-110 transition-transform" />
                     </button>
                 </div>
             </div>

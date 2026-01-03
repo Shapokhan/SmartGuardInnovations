@@ -13,7 +13,7 @@ const CTASection = () => {
 
             <div className="container mx-auto px-4 relative z-10 text-center space-y-8">
                 <h2 className="text-4xl lg:text-6xl font-black leading-tight max-w-4xl mx-auto">
-                    Ready To Take Your Business To The <span className="underline decoration-[#E91E63] decoration-4">Next Level?</span>
+                    Ready To Take Your Business To The Next Level?
                 </h2>
                 <p className="text-white/80 text-xl max-w-2xl mx-auto">
                     Stop waiting and start growing. Our consultants are ready to help you implement winning strategies today.
