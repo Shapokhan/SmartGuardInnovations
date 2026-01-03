@@ -1,10 +1,19 @@
 
 import cardImg from '@/assets/images/circle-img.png';
+import aboutShape from '@/assets/images/about_shape.png';
 
 const AboutTeamProcess = () => {
     return (
-        <section className="sm:py-20 py-7 relative">
-            <div className="container mx-auto px-4">
+        <section className="sm:py-20 py-7 relative overflow-hidden">
+            {/* Decorative Background Shapes */}
+            <div className="absolute top-0 left-0 size-[700px] pointer-events-none -translate-x-1/4 -translate-y-1/4 ">
+                <img src={aboutShape} alt="" className="w-full h-full object-contain" />
+            </div>
+            <div className="absolute bottom-0 right-0 size-[700px] pointer-events-none translate-x-1/4 translate-y-1/4 ">
+                <img src={aboutShape} alt="" className="w-full h-full object-contain transform rotate-180" />
+            </div>
+
+            <div className="container mx-auto px-4 relative z-10">
                 <div className="text-center mb-24 space-y-4">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#053131] leading-tight">
                         <span className="font-bold">Trusted</span> <span className="font-light font-soka text-[#0C6E6D]">Marketing Consulting</span><br />
