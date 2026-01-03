@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { FaFacebookF, FaYoutube, FaInstagram, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { FaFacebookF, FaYoutube, FaInstagram, FaEnvelope } from 'react-icons/fa';
 import { RiMenu3Line, RiCloseLine, RiArrowRightLine } from 'react-icons/ri';
 import { RiWhatsappFill } from "react-icons/ri";
 
@@ -18,7 +18,7 @@ const Header = () => {
     const navLinks = [
         { name: 'Home', href: '/' },
         { name: 'Product', href: '#' },
-        { name: 'Services', href: '#' },
+        { name: 'Services', href: '/services' },
         { name: 'About Us', href: '#' },
         { name: 'Contact Us', href: '/contact-us' }
     ];
