@@ -1,6 +1,7 @@
 
 import trustIcon from '@/assets/images/trust-white.png';
 import cardImg from '@/assets/images/circle-img.png';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
 const ServicesSection = () => {
@@ -44,9 +45,11 @@ const ServicesSection = () => {
                 </div>
 
                 <div className="mt-5 text-center">
-                    <Button className="bg-[#0C6E6D] hover:bg-[#053131] text-white rounded-full px-12 py-8 text-lg font-bold">
-                        View all Services
-                    </Button>
+                    <Link to="/services">
+                        <Button className="bg-[#0C6E6D] hover:bg-[#053131] text-white rounded-full px-12 py-8 text-lg font-bold">
+                            View all Services
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </section>

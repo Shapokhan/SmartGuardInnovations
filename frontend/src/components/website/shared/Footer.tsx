@@ -3,7 +3,7 @@ import footer_bg from '@/assets/images/footer-bg.png';
 const Footer = () => {
     return (
         <footer className="bg-[#0C6E6D] relative ">
-            <div className="max-w-[1400px] mx-auto px-4 pb-5">
+            <div className="max-w-[1400px] mx-auto px-4 pb-5 pt-10">
                 <div className="bg-[#053131] rounded-[60px]  text-white relative overflow-hidden">
                     {/* Background Pattern Placeholder - User will add image later */}
                     <div className="absolute pointer-events-none">
@@ -36,11 +36,11 @@ const Footer = () => {
                             <div className="space-y-8 lg:px-4">
                                 <h4 className="text-2xl font-bold text-white">Quick Link</h4>
                                 <ul className="space-y-4 text-white/60 text-base font-medium">
-                                    <li><a href="#" className="hover:text-white transition-colors">Home</a></li>
+                                    <li><a href="/" className="hover:text-white transition-colors">Home</a></li>
                                     <li><a href="#" className="hover:text-white transition-colors">Solution</a></li>
                                     <li><a href="#" className="hover:text-white transition-colors">Product</a></li>
                                     <li><a href="#" className="hover:text-white transition-colors">Services</a></li>
-                                    <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
+                                    <li><a href="/contact-us" className="hover:text-white transition-colors">Contact Us</a></li>
                                 </ul>
                             </div>
 
@@ -80,7 +80,7 @@ const Footer = () => {
                         </div>
 
                         {/* Middle: Line with Social Icons */}
-                        <div className="relative mb-12">
+                        <div className="relative sm:mb-12 mb-5">
                             <div className="h-px bg-white/10 w-full"></div>
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center gap-4 bg-[#053131] px-6">
                                 <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-white hover:text-[#053131] transition-all cursor-pointer">
