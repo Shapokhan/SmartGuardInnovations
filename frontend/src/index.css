@@ -2,20 +2,36 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family: 'Soka';
+  src: url('./assets/fonts/Soka-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Soka';
+  src: url('./assets/fonts/soka-Regular.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.129 0.042 264.695);
 
   --border: oklch(0.929 0.013 255.508);
-  --primary: oklch(0.208 0.042 265.755);
+  --primary: #053131;
   --primary-foreground: oklch(0.984 0.003 247.858);
   --radius: 0.625rem;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
+  --secondary: #0C6E6D;
+  --secondary-foreground: oklch(0.984 0.003 247.858);
   --muted: oklch(0.968 0.007 247.896);
   --muted-foreground: oklch(0.554 0.046 257.417);
   --accent: oklch(0.968 0.007 247.896);
@@ -88,6 +104,8 @@ body {
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-soka: "Soka", sans-serif;
 }
 
 .dark {
@@ -128,7 +146,12 @@ body {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+
+  .font-soka {
+    font-family: var(--font-soka);
   }
 }
