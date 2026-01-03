@@ -7,7 +7,6 @@ const CTASection = () => {
             <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
                 <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
                     <circle cx="0" cy="0" r="40" fill="white" />
-                    <circle cx="100" cy="100" r="40" fill="white" />
                 </svg>
             </div>
 
