@@ -32,14 +32,15 @@ const AboutIntro = () => {
                         </div>
 
                         {/* Buttons */}
-                        <div className="flex flex-wrap gap-4">
-                            <Button className="bg-[#053131] hover:bg-[#0C6E6D] text-white rounded-full px-8 py-6 text-sm font-bold shadow-lg transition-all">
+                        {/* Buttons */}
+                        <div className="flex flex-nowrap sm:flex-wrap gap-2 sm:gap-4 overflow-x-auto sm:overflow-visible pb-2 sm:pb-0 hide-scrollbar snap-x">
+                            <Button className="bg-[#053131] hover:bg-[#0C6E6D] text-white rounded-full px-4 py-2 text-[10px] sm:px-8 sm:py-6 sm:text-sm font-bold shadow-lg transition-all flex-shrink-0 snap-start whitespace-nowrap">
                                 View all Services
                             </Button>
-                            <Button className="bg-[#E6F4F4] hover:bg-[#0C6E6D] text-[#053131] hover:text-white rounded-full px-8 py-6 text-sm font-bold transition-all">
+                            <Button className="bg-[#E6F4F4] hover:bg-[#0C6E6D] text-[#053131] hover:text-white rounded-full px-4 py-2 text-[10px] sm:px-8 sm:py-6 sm:text-sm font-bold transition-all flex-shrink-0 snap-start whitespace-nowrap">
                                 View all Services
                             </Button>
-                            <Button className="bg-[#E6F4F4] hover:bg-[#0C6E6D] text-[#053131] hover:text-white rounded-full px-8 py-6 text-sm font-bold transition-all">
+                            <Button className="bg-[#E6F4F4] hover:bg-[#0C6E6D] text-[#053131] hover:text-white rounded-full px-4 py-2 text-[10px] sm:px-8 sm:py-6 sm:text-sm font-bold transition-all flex-shrink-0 snap-start whitespace-nowrap">
                                 View all Services
                             </Button>
                         </div>

@@ -80,7 +80,7 @@ const Footer = () => {
                         </div>
 
                         {/* Middle: Line with Social Icons */}
-                        <div className="relative mb-12">
+                        <div className="relative sm:mb-12 mb-5">
                             <div className="h-px bg-white/10 w-full"></div>
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center gap-4 bg-[#053131] px-6">
                                 <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-white hover:text-[#053131] transition-all cursor-pointer">
