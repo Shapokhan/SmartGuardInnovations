@@ -3,7 +3,7 @@ import cardImg from '@/assets/images/circle-img.png';
 
 const AboutTeamProcess = () => {
     return (
-        <section className="py-20 relative">
+        <section className="sm:py-20 py-7 relative">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-24 space-y-4">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#053131] leading-tight">
