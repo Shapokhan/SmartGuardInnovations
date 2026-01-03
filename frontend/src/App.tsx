@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes } from 'react-router-dom';
 import { DashboardRoutes } from '@/routes/dashboard/DashboardRoutes';
-import { WebsiteRoutes } from '@/routes/WebsiteRoutes';
+import { WebsiteRoutes } from '@/routes/website/WebsiteRoutes';
 
 function App() {
   return (
