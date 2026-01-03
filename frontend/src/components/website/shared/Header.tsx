@@ -93,7 +93,7 @@ const Header = () => {
                             <a
                                 key={item.name}
                                 href={item.href}
-                                className="text-[13px] font-black text-[#053131] hover:text-[#0C6E6D] transition-all uppercase tracking-widest relative group"
+                                className="text-[13px] font-black text-[#053131] hover:text-[#0C6E6D] font-bold transition-all uppercase tracking-widest relative group"
                             >
                                 {item.name}
                                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#0C6E6D] transition-all duration-300 group-hover:w-full"></span>
@@ -102,7 +102,7 @@ const Header = () => {
                     </nav>
 
                     {/* CTA Button */}
-                    <button className="hidden rounded-full bg-[#0C6E6D] px-8 py-3.5 text-[11px] font-black uppercase tracking-[0.2em] text-white hover:bg-[#053131] transition-all duration-300 lg:block shadow-lg active:scale-95">
+                    <button className="hidden rounded-full bg-[#0C6E6D] font-bold px-8 py-3.5 text-[12px] uppercase tracking-[0.1em] text-white hover:bg-[#053131] transition-all duration-300 lg:block shadow-lg active:scale-95">
                         TRUSTED CONSULTING
                     </button>
 
@@ -149,8 +149,8 @@ const Header = () => {
                             ))}
                         </nav>
 
-                        <div className="mt-auto pt-10">
-                            <button className="w-full bg-[#0C6E6D] text-white py-5 rounded-full font-black uppercase text-xs tracking-[0.2em] shadow-2xl mb-10">
+                        <div className="mt-auto pt-10 font-bold">
+                            <button className="w-full bg-[#0C6E6D] text-white py-5 rounded-full font-black uppercase text-sm tracking-[0.2em] shadow-2xl mb-10">
                                 Trusted Consulting
                             </button>
 
