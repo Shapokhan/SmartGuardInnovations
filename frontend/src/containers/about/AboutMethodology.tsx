@@ -18,32 +18,52 @@ const AboutMethodology = () => {
                     </p>
                 </div>
 
-                <div className="relative flex flex-col md:flex-row gap-8 justify-center items-center mt-12 flex-wrap lg:flex-nowrap">
-                    {/* Connecting dashed line - Visible on Desktop */}
-                    <div className="hidden lg:block absolute top-1/2 left-10 right-10 h-[2px] border-t-2 border-dashed border-[#0C6E6D]/30 -translate-y-12"></div>
+                <div className="relative min-h-[400px] mt-24 max-w-6xl mx-auto">
+                    {/* Curved Connector Line - Visible on Desktop */}
+                    <div className="hidden lg:block absolute -top-20 left-0 w-full h-full pointer-events-none z-0">
+                        <svg className="w-full h-full" viewBox="0 0 1000 300" preserveAspectRatio="none">
+                            <path
+                                d="M 125 150 C 250 150, 250 250, 375 250 C 500 250, 500 150, 625 150 C 750 150, 750 250, 875 250"
+                                stroke="#14B8A6"
+                                strokeWidth="2"
+                                strokeDasharray="8 8"
+                                fill="none"
+                                className="opacity-40"
+                            />
+                        </svg>
+                    </div>
 
-                    {[
-                        { color: 'bg-[#053131]', iconColor: 'text-white' },
-                        { color: 'bg-[#08605F]', iconColor: 'text-[#053131]' },
-                        { color: 'bg-[#08605F]', iconColor: 'text-[#053131]' },
-                        { color: 'bg-[#08605F]', iconColor: 'text-[#053131]' }
-                    ].map((style, idx) => (
-                        <div key={idx} className="relative z-10 flex flex-col items-center text-center max-w-[280px]">
-                            {/* Hexagon Shape */}
-                            <div className={`w-40 h-40 sm:w-48 sm:h-48 ${style.color} relative flex items-center justify-center mb-6 shadow-xl transition-transform hover:-translate-y-2 duration-300`}
-                                style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }}>
-                                <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center">
-                                    <img src={trustIcon} alt="Icon" className={`w-full opacity-90 ${idx === 0 ? 'invert-0' : 'invert brightness-0'}`} />
-                                    {/* Note: Inverting logic specific to the generic trustIcon used elsewhere being white */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
+                        {[
+                            { color: 'bg-[#053131]', iconColor: 'text-white', translate: 'lg:translate-y-0' },
+                            { color: 'bg-[#E6F4F4]', iconColor: 'text-[#053131]', translate: 'lg:translate-y-24' },
+                            { color: 'bg-[#E6F4F4]', iconColor: 'text-[#053131]', translate: 'lg:translate-y-0' },
+                            { color: 'bg-[#E6F4F4]', iconColor: 'text-[#053131]', translate: 'lg:translate-y-24' }
+                        ].map((style, idx) => (
+                            <div key={idx} className={`flex flex-col items-center text-center ${style.translate}`}>
+                                {/* Hexagon Shape */}
+                                <div className={`w-48 h-48 sm:w-56 sm:h-56 ${style.color} relative flex items-center justify-center mb-6 shadow-xl transition-transform hover:-translate-y-2 duration-300`}
+                                    style={{
+                                        clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
+                                        padding: '2px' // Optional padding to simulate border if nested
+                                    }}>
+                                    <div className="w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center">
+                                        {/* Using CSS filter to control icon color based on background */}
+                                        <img
+                                            src={trustIcon}
+                                            alt="Icon"
+                                            className={`w-full transition-all duration-300 ${idx === 0 ? 'brightness-0 invert' : 'brightness-0 opacity-80'}`}
+                                        />
+                                    </div>
                                 </div>
-                            </div>
 
-                            <h3 className="text-xl font-black text-[#053131] mb-2">Ipsum is Simply</h3>
-                            <p className="text-gray-400 text-sm leading-relaxed px-4">
-                                Experience healthcare you can trust. Our dedicated team provides com compassionate high
-                            </p>
-                        </div>
-                    ))}
+                                <h3 className="text-xl font-black text-[#053131] mb-2">Ipsum is Simply</h3>
+                                <p className="text-gray-400 text-sm leading-relaxed px-2">
+                                    Experience healthcare you can trust. Our dedicated team provides com compassionate high
+                                </p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>

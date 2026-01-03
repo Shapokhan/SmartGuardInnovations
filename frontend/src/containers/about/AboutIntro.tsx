@@ -1,12 +1,12 @@
 
 import { Button } from '@/components/ui/button';
-import sideImg from '@/assets/images/contact-us-side-img.png';
+import sideImg from '@/assets/images/circle-img.png';
 import smallImg from '@/assets/images/circle-img.png';
 import { FaCheckCircle } from 'react-icons/fa';
 
 const AboutIntro = () => {
     return (
-        <section className="py-16 md:py-24 relative">
+        <section className="py-7 md:py-10 relative">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col lg:flex-row gap-12 items-center">
 
