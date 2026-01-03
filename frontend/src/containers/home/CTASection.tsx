@@ -1,9 +1,6 @@
-
-import React from 'react';
-
 const CTASection = () => {
     return (
-        <section className="py-10 bg-[#0C6E6D] text-white overflow-hidden relative">
+        <section className="py-8 sm:py-10 bg-[#0C6E6D] text-white overflow-hidden relative">
             <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
                 <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
                     <circle cx="0" cy="0" r="40" fill="white" />
@@ -11,7 +8,7 @@ const CTASection = () => {
             </div>
 
             <div className="container mx-auto px-4 relative z-10 text-center space-y-8">
-                <h2 className="text-4xl lg:text-6xl font-black leading-tight max-w-4xl mx-auto">
+                <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black leading-tight max-w-4xl mx-auto">
                     Ready To Take Your Business To The Next Level?
                 </h2>
                 <p className="text-white/80 text-xl max-w-2xl mx-auto">
