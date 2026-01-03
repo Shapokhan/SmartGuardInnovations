@@ -3,7 +3,7 @@ import footer_bg from '@/assets/images/footer-bg.png';
 const Footer = () => {
     return (
         <footer className="bg-[#0C6E6D] relative ">
-            <div className="max-w-[1400px] mx-auto px-4 pb-5">
+            <div className="max-w-[1400px] mx-auto px-4 pb-5 pt-10">
                 <div className="bg-[#053131] rounded-[60px]  text-white relative overflow-hidden">
                     {/* Background Pattern Placeholder - User will add image later */}
                     <div className="absolute pointer-events-none">
