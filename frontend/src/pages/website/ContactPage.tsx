@@ -115,7 +115,7 @@ const ContactPage = () => {
                             <div className="lg:w-1/3 w-full flex flex-col justify-between">
                                 {/* Info Cards Container */}
                                 <div className="space-y-4 mb-8">
-                                    <div className="bg-white/70 backdrop-blur-xl rounded-[35px] p-3 sm:p-5 flex items-center gap-6 group hover:bg-[#053131] transition-all duration-500 cursor-pointer border border-white shadow-lg hover:shadow-2xl hover:-translate-y-2">
+                                    <div className="bg-white/70 backdrop-blur-xl rounded-[35px] p-3  flex items-center gap-6 group hover:bg-[#053131] transition-all duration-500 cursor-pointer border border-white shadow-lg hover:shadow-2xl hover:-translate-y-2">
                                         <div className="size-12 sm:size-16 bg-[#0C6E6D] rounded-[22px] flex items-center justify-center text-white shadow-xl transform group-hover:rotate-[15deg] transition-all duration-500">
                                             <FaPhoneAlt className="text-xl sm:text-2xl" />
                                         </div>
@@ -125,7 +125,7 @@ const ContactPage = () => {
                                         </div>
                                     </div>
 
-                                    <div className="bg-white/70 backdrop-blur-xl rounded-[35px] p-3 sm:p-5 flex items-center gap-6 group hover:bg-[#053131] transition-all duration-500 cursor-pointer border border-white shadow-lg hover:shadow-2xl hover:-translate-y-2">
+                                    <div className="bg-white/70 backdrop-blur-xl rounded-[35px] p-3  flex items-center gap-6 group hover:bg-[#053131] transition-all duration-500 cursor-pointer border border-white shadow-lg hover:shadow-2xl hover:-translate-y-2">
                                         <div className="size-12 sm:size-16 bg-[#0C6E6D] rounded-[22px] flex items-center justify-center text-white shadow-xl transform group-hover:rotate-[15deg] transition-all duration-500">
                                             <FaEnvelope className="text-xl sm:text-2xl" />
                                         </div>
@@ -135,7 +135,7 @@ const ContactPage = () => {
                                         </div>
                                     </div>
 
-                                    <div className="bg-white/70 backdrop-blur-xl rounded-[35px] p-3 sm:p-5 flex items-center gap-6 group hover:bg-[#053131] transition-all duration-500 cursor-pointer border border-white shadow-lg hover:shadow-2xl hover:-translate-y-2">
+                                    <div className="bg-white/70 backdrop-blur-xl rounded-[35px] p-3  flex items-center gap-6 group hover:bg-[#053131] transition-all duration-500 cursor-pointer border border-white shadow-lg hover:shadow-2xl hover:-translate-y-2">
                                         <div className="size-12 sm:size-16 bg-[#0C6E6D] rounded-[22px] flex items-center justify-center text-white shadow-xl transform group-hover:rotate-[15deg] transition-all duration-500">
                                             <FaMapMarkerAlt className="text-xl sm:text-2xl" />
                                         </div>
