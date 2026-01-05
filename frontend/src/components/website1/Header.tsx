@@ -18,10 +18,10 @@ export function Header() {
   }, []);
 
   const navItems = [
-    { label: 'Home', path: '/' },
-    { label: 'About Us', path: '/about' },
-    { label: 'Products', path: '/products' },
-    { label: 'Contact Us', path: '/contact' },
+    { label: 'Home', path: '/website1' },
+    { label: 'About Us', path: '/website1/about1' },
+    { label: 'Products', path: '/website1/products1' },
+    { label: 'Contact Us', path: '/website1/contact1' },
   ];
 
   return (
@@ -33,12 +33,17 @@ export function Header() {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 group">
+        <Link to="/website1" className="flex items-center gap-2 group">
           <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
             <div className="w-5 h-5 bg-primary rounded-sm transform rotate-45"></div>
           </div>
           <div className="flex flex-col">
-            <span className={cn("font-bold text-xl leading-none", isScrolled ? "text-slate-800" : "text-slate-800")}>
+            <span
+              className={cn(
+                'font-bold text-xl leading-none',
+                isScrolled ? 'text-slate-800' : 'text-slate-800'
+              )}
+            >
               SmartGuard
             </span>
             <span className="text-[10px] uppercase tracking-widest text-slate-500 font-semibold">
@@ -54,24 +59,31 @@ export function Header() {
               key={item.path}
               to={item.path}
               className={cn(
-                "text-sm font-bold uppercase tracking-wide transition-colors hover:text-primary relative group py-2",
+                'text-sm font-bold uppercase tracking-wide transition-colors hover:text-primary relative group py-2',
                 location.pathname === item.path
-                  ? "text-primary"
-                  : isScrolled ? "text-slate-600" : "text-slate-700"
+                  ? 'text-primary'
+                  : isScrolled
+                  ? 'text-slate-600'
+                  : 'text-slate-700'
               )}
             >
               {item.label}
-              <span className={cn(
-                "absolute bottom-0 left-0 w-full h-0.5 bg-primary transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100",
-                location.pathname === item.path ? "scale-x-100" : ""
-              )}></span>
+              <span
+                className={cn(
+                  'absolute bottom-0 left-0 w-full h-0.5 bg-primary transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100',
+                  location.pathname === item.path ? 'scale-x-100' : ''
+                )}
+              ></span>
             </Link>
           ))}
         </nav>
 
         {/* CTA Button */}
         <div className="hidden md:flex items-center gap-4">
-          <a href="tel:+18001234567" className="flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-primary transition-colors">
+          <a
+            href="tel:+18001234567"
+            className="flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-primary transition-colors"
+          >
             <Phone className="w-4 h-4" />
             <span>1-800-123-4567</span>
           </a>
@@ -97,8 +109,10 @@ export function Header() {
               key={item.path}
               to={item.path}
               className={cn(
-                "text-base font-semibold py-2 border-b border-slate-50",
-                location.pathname === item.path ? "text-primary" : "text-slate-600"
+                'text-base font-semibold py-2 border-b border-slate-50',
+                location.pathname === item.path
+                  ? 'text-primary'
+                  : 'text-slate-600'
               )}
               onClick={() => setIsMobileMenuOpen(false)}
             >
