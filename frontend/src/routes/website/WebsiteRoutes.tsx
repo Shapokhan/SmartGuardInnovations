@@ -4,6 +4,7 @@ import LandingPage from "@/pages/website/LandingPage";
 import ContactPage from "@/pages/website/ContactPage";
 import ServicesPage from "@/pages/website/ServicesPage";
 import AboutPage from "@/pages/website/AboutPage";
+import ProductPage from "@/pages/website/ProductPage";
 
 export const WebsiteRoutes = (
   <>
@@ -11,5 +12,6 @@ export const WebsiteRoutes = (
     <Route path="/contact-us" element={<ContactPage />} />
     <Route path="/services" element={<ServicesPage />} />
     <Route path="/about-us" element={<AboutPage />} />
+    <Route path="/products" element={<ProductPage />} />
   </>
 );

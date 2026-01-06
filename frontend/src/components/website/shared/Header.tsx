@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FaFacebookF, FaYoutube, FaInstagram, FaEnvelope } from 'react-icons/fa';
-import { RiMenu3Line, RiCloseLine, RiArrowRightLine } from 'react-icons/ri';
-import { RiWhatsappFill } from "react-icons/ri";
+import { RiMenu3Line, RiCloseLine, RiArrowRightLine, RiWhatsappFill } from 'react-icons/ri';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,7 +30,7 @@ const Header = () => {
 
     const navLinks = [
         { name: 'Home', href: '/' },
-        { name: 'Product', href: '#' },
+        { name: 'Products', href: '/products' },
         { name: 'Services', href: '/services' },
         { name: 'About Us', href: '/about-us' },
         { name: 'Contact Us', href: '/contact-us' }

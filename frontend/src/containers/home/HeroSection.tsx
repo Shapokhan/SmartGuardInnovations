@@ -43,7 +43,7 @@ const HeroSection = () => {
                         whileInView={{ y: 0, opacity: 1 }}
                         viewport={{ once: false, amount: 0.5 }}
                         transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-                        className="text-4xl sm:text-5xl lg:text-6xl  leading-[1.2] text-white"
+                        className="text-4xl sm:text-5xl   leading-[1.2] text-white"
                     >
                         <span className="font-bold ">Trusted</span> <span className="font-[100] font-soka">Marketing</span><br />
                         <span className="font-bold ">Consulting</span> <span className="font-[100] font-soka">Agency</span><br />

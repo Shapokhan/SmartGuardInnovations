@@ -101,7 +101,7 @@ const SolutionsSection = () => {
                     whileInView={{ y: 0, opacity: 1 }}
                     viewport={{ once: false, amount: 0.5 }}
                     transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
-                    className="mt-16 text-center"
+                    className="sm:mt-10 mt-6 text-center"
                 >
                     <Button className="bg-[#0C6E6D] hover:bg-[#053131] text-white rounded-full px-10 py-7 font-bold">
                         View all Solutions

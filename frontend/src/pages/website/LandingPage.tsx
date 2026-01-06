@@ -12,7 +12,7 @@ import CTASection from '../../containers/home/CTASection';
 
 const LandingPage = () => {
     return (
-        <div className="min-h-screen bg-white font-sans selection:bg-[#0C6E6D] selection:text-white">
+        <div className=" bg-white font-sans selection:bg-[#0C6E6D] selection:text-white">
             <Header />
             <main>
                 <HeroSection />

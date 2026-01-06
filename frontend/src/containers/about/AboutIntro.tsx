@@ -1,7 +1,7 @@
 
 import { Button } from '@/components/ui/button';
-import sideImg from '@/assets/images/circle-img.png';
-import smallImg from '@/assets/images/circle-img.png';
+import sideImg from '@/assets/images/about-us-section.png';
+import smallImg from '@/assets/images/sciencelab.png';
 import { FaCheckCircle } from 'react-icons/fa';
 
 const AboutIntro = () => {
@@ -12,7 +12,7 @@ const AboutIntro = () => {
 
                     {/* Left Side: Large Image */}
                     <div className="w-full lg:w-1/2 relative">
-                        <div className="rounded-[50px] overflow-hidden shadow-2xl relative z-10">
+                        <div className="rounded-[55px] overflow-hidden shadow-2xl relative z-10">
                             <img src={sideImg} alt="Business Meeting" className="w-full h-auto object-cover" />
                         </div>
                         {/* Decorative background shape */}
@@ -49,7 +49,7 @@ const AboutIntro = () => {
                         <div className="grid sm:grid-cols-2 gap-8 items-center mt-8">
                             {/* Small Image */}
                             <div className="rounded-[40px] overflow-hidden shadow-lg h-[200px] w-full relative">
-                                <img src={smallImg} alt="Lab Work" className="w-full h-full object-cover" />
+                                <img src={smallImg} alt="Lab Work" className="w-full h-full object-[100%_100%]" />
                             </div>
 
                             {/* Points */}

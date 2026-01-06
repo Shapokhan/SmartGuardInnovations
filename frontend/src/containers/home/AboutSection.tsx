@@ -20,7 +20,7 @@ const AboutSection = () => {
                             <img
                                 src={secImage}
                                 alt="Marketing Consulting"
-                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-90"
+                                className="w-full h-full object-cover transition-transform duration-700 scale-90 group-hover:scale-80"
                             />
 
                         </div>
