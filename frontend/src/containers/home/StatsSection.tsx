@@ -1,6 +1,4 @@
 
-import React from 'react';
-
 const StatsSection = () => {
     return (
         <section className="py-20 bg-[#053131] text-white relative overflow-hidden">
