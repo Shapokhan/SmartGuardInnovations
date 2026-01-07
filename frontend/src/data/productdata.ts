@@ -1,3 +1,64 @@
+import btnMomA from '../assets/images/product/Buttons-Momentary-image-a.png';
+import btnMomB from '../assets/images/product/Buttons-Momentary-image-b.png';
+import btnMomC from '../assets/images/product/Buttons-Momentary-image-c.png';
+
+import btnSmart from '../assets/images/product/button-lntelligent--starsmart-starsmartve.png';
+import btnSmartD from '../assets/images/product/button-lntelligent--starsmart-starsmartve-d.png';
+import btnSmartE from '../assets/images/product/button-lntelligent--starsmart-starsmartve-e.png';
+
+import btnPoe from '../assets/images/product/Buttons-Intelligent-–-Netsmart-PoE---GPON-Ready.png';
+import btnPoeG from '../assets/images/product/Buttons-Intelligent-–-Netsmart-PoE---GPON-Ready-g.png';
+
+import btnSlaveH from '../assets/images/product/Buttons-Intelligent-–-Netsmart-Slaves-–-Dry-and-Wet-Area-h.png';
+import btnSlaveI from '../assets/images/product/Buttons-Intelligent-–-Netsmart-Slaves-–-Dry-and-Wet-Area-i.png';
+import btnSlaveK from '../assets/images/product/Buttons-Intelligent-–-Netsmart-Slaves-–-Dry-and-Wet-Area-k.png';
+
+import btnWifiL from '../assets/images/product/Buttons-Intelligent-–-Netsmart-Wi-Fi-l.png';
+import btnWifiO from '../assets/images/product/Buttons-Intelligent-–-Netsmart-Wi-Fi-o.png';
+
+import btnWetB from '../assets/images/product/Buttons-Wet-Area-–-Latching-and-Momentary-b.png';
+import btnWetM from '../assets/images/product/Buttons-Wet-Area-–-Latching-and-Momentary-m.png';
+import btnWetN from '../assets/images/product/Buttons-Wet-Area-–-Latching-and-Momentary-n.png';
+
+import btnSafeB from '../assets/images/product/Buttons-Wireless---SafAir-b.png';
+import btnSafeD from '../assets/images/product/Buttons-Wireless---SafAir-d.png';
+import btnSafeW from '../assets/images/product/Buttons-Wireless---SafAir-w.png';
+
+import duress from '../assets/images/product/Duress-Panic-Strip-Wall-Mount-or-Under-bench.png';
+
+import sensorMat from '../assets/images/product/Sensor-Mats-–-Floor-–-Bed---Chair.png';
+
+import dome7 from '../assets/images/product/Dome-Lights-–-7-Colour-Switched-and-iDementia.png';
+import dome7D from '../assets/images/product/Dome-Lights-–-7-Colour-Switched-and-iDementia-d.png';
+import dome7S from '../assets/images/product/Dome-Lights-–-7-Colour-Switched-and-iDementia-s.png';
+
+import domeRgb from '../assets/images/product/Dome-Lights-–-NetSmart-RGB.png';
+import domeRgbA from '../assets/images/product/Dome-Lights-–-NetSmart-RGB-a.png';
+
+import rtlsBeacon from '../assets/images/product/Real-Time-Locating-Systems-(RTLS).png';
+
+import pendantD from '../assets/images/product/Pendants-d.png';
+import pendantK from '../assets/images/product/Pendantsk.png';
+import pendantS from '../assets/images/product/Pendantss.png';
+
+import handset from '../assets/images/product/Handset-Entertainment.png';
+import handsetS from '../assets/images/product/Handset-Entertainment-s.png';
+
+import annunciator from '../assets/images/product/Annunciators.png';
+import annunciatorD from '../assets/images/product/Annunciators-d.png';
+
+import pager from '../assets/images/product/Pagers.png';
+
+import mobileApp from '../assets/images/product/Mobile-Apps-–-QP-Messenger.png';
+import qpAnalysis from '../assets/images/product/Quickpass-Messenger-–-Graphical-Call-History-Analysis.png';
+
+import rtlsTag from '../assets/images/product/Real-Time-Locating-Systems-(RTLS)-k.png';
+import rtlsTagA from '../assets/images/product/Real-Time-Locating-Systems-(RTLS)-a.png';
+
+import dementia from '../assets/images/product/Dementia-Care.png';
+
+import software from '../assets/images/product/Software-and-Integration-–-Quickpass-Messenger.png';
+
 export interface ProductImage {
     id: number;
     alt: string;
@@ -39,9 +100,9 @@ export const products: Product[] = [
         productType: "Momentary",
         productName: "Buttons Momentary",
         images: [
-            { id: 1, alt: "Momentary Call Station PCB Front", src: "/images/buttons-momentary-1.png" },
-            { id: 2, alt: "Momentary Call Station PCB Back", src: "/images/buttons-momentary-2.png" },
-            { id: 3, alt: "Press For Nurse Momentary Wall Plate", src: "/images/buttons-momentary-3.png" }
+            { id: 1, alt: "Momentary Call Station PCB Front", src: btnMomA },
+            { id: 2, alt: "Momentary Call Station PCB Back", src: btnMomB },
+            { id: 3, alt: "Press For Nurse Momentary Wall Plate", src: btnMomC }
         ],
         description: "The momentary call/cancel station provides independent call and cancel buttons. In addition to a pendant socket for a variety of patient call requirements, an air or other type of soft touch pendant may also be connected for special applications. The standard range is available in a variety of call button colours and membrane descriptions. The cancel button text background is always grey. Modules are assembled on a one gang plastic plate (complete with blank surround) for wall mounting. A call can be made by pressing the button; the call station or pendant connected to the station. When a call is made, a red reassurance LED below the call button illuminates. This provides local indication that the system has received the call and guides the attending staff to the call location. Pressing the cancel button will reset the call and extinguish the LED. This call station may be used in areas such as patient rooms and other areas where a call cancellation is required. The call station is available with screw terminals or RJ45 connectors.",
         features: [
@@ -76,9 +137,9 @@ export const products: Product[] = [
         productType: "Latching",
         productName: "Buttons Latching",
         images: [
-            { id: 1, alt: "Latching Call Station PCB Front", src: "/images/buttons-latching-1.png" },
-            { id: 2, alt: "Latching Call Station PCB Back", src: "/images/buttons-latching-2.png" },
-            { id: 3, alt: "Press For Nurse Latching Wall Plate", src: "/images/buttons-latching-3.png" }
+            { id: 1, alt: "Latching Call Station PCB Front", src: btnMomA },
+            { id: 2, alt: "Latching Call Station PCB Back", src: btnMomB },
+            { id: 3, alt: "Press For Nurse Latching Wall Plate", src: btnMomC }
         ],
         description: "The latching call station provides independent call and cancel buttons. When the call button is pressed, the call latches and remains active until it is cancelled by pressing the cancel button. A red reassurance LED below the call button illuminates when a call is registered, providing clear local indication to staff. The call station supports a 6.5mm pendant socket for a wide range of patient call devices, including pendants and pillow speakers. The standard range is available in a variety of call button colours and membrane descriptions. The cancel button text background is always grey. Modules are assembled on a one gang plastic plate with blank surround for wall mounting. The latching call station is suitable for areas where calls must remain active until deliberately cancelled. Units are available with RJ45 connectors or screw terminals.",
         features: [
@@ -114,9 +175,9 @@ export const products: Product[] = [
         productType: "Intelligent",
         productName: "Buttons Intelligent – Starsmart/StarsmartVE",
         images: [
-            { id: 1, alt: "Starsmart Call Station Front", src: "/images/buttons-intelligent-1.png" },
-            { id: 2, alt: "Starsmart Call Station Back", src: "/images/buttons-intelligent-2.png" },
-            { id: 3, alt: "StarsmartVE Wall Plate with Pendant", src: "/images/buttons-intelligent-3.png" }
+            { id: 1, alt: "Starsmart Call Station Front", src: btnSmart },
+            { id: 2, alt: "Starsmart Call Station Back", src: btnSmartD },
+            { id: 3, alt: "StarsmartVE Wall Plate with Pendant", src: btnSmartE }
         ],
         description: "The Starsmart and StarsmartVE multi-function station provides independent call, assist, and cancel buttons, in addition to 3 auxiliary sockets for a variety of patient/resident requirements. The ability to connect a pendant, bed mat, floor mat, beam, or bed wet sensor is readily available within this compact call station. Modules are assembled on a one gang plastic plate for wall mounting. A red reassurance LED illuminates when a call is made, guiding staff to the call location. Pressing the cancel button will reset the call and extinguish the LED. This call station is suitable for patient rooms and other areas requiring a cancel function and is only available with RJ45 connectors.",
         features: [
@@ -151,9 +212,9 @@ export const products: Product[] = [
         productType: "Intelligent",
         productName: "Buttons Intelligent – Netsmart PoE - GPON Ready",
         images: [
-            { id: 1, alt: "Netsmart PoE Call Station Front", src: "/images/buttons-netsmart-poe-1.png" },
-            { id: 2, alt: "Netsmart PoE Call Station Back", src: "/images/buttons-netsmart-poe-2.png" },
-            { id: 3, alt: "Netsmart PoE Wall Plate with Pendant", src: "/images/buttons-netsmart-poe-3.png" }
+            { id: 1, alt: "Netsmart PoE Call Station Front", src: btnPoe },
+            { id: 2, alt: "Netsmart PoE Call Station Back", src: btnPoeG },
+            { id: 3, alt: "Netsmart PoE Wall Plate with Pendant", src: btnPoe }
         ],
         description: "The PoE (Power over Ethernet) multi-function station provides independent call, assist, and cancel buttons, in addition to 3 auxiliary sockets for a variety of patient/resident requirements. Modules are assembled on a one gang plastic plate for wall mounting. A red reassurance LED illuminates when a call is made, guiding staff to the call location. Pressing the cancel button will reset the call and extinguish the LED. This call station is only available with RJ45 connectors and may be used in patient rooms or other areas requiring a cancel function.",
         features: [
@@ -189,9 +250,9 @@ export const products: Product[] = [
         productType: "Intelligent",
         productName: "Buttons Intelligent – Netsmart Slaves – Dry and Wet Area",
         images: [
-            { id: 1, alt: "Netsmart LS Slave Dry Area Front", src: "/images/buttons-netsmart-slave-1.png" },
-            { id: 2, alt: "Netsmart LS Slave Wet Area Front", src: "/images/buttons-netsmart-slave-2.png" },
-            { id: 3, alt: "Netsmart LS Slave Wall Plate", src: "/images/buttons-netsmart-slave-3.png" }
+            { id: 1, alt: "Netsmart LS Slave Dry Area Front", src: btnSlaveH },
+            { id: 2, alt: "Netsmart LS Slave Wet Area Front", src: btnSlaveI },
+            { id: 3, alt: "Netsmart LS Slave Wall Plate", src: btnSlaveK }
         ],
         description: "The Netsmart LS slave dry area call/cancel station provides independent call and cancel buttons. Wet area units are fully epoxy sealed with a wall gasket for IP rated wet area use. Modules are assembled on a one gang plastic plate for wall mounting. A red reassurance LED illuminates when a call is made, guiding staff to the call location. Pressing the cancel button resets the call and extinguishes the LED. Suitable for patient rooms and other areas requiring a cancel function.",
         features: [
@@ -225,9 +286,9 @@ export const products: Product[] = [
         productType: "Intelligent",
         productName: "Buttons Intelligent – Netsmart Wi-Fi",
         images: [
-            { id: 1, alt: "Netsmart Wi-Fi Call Station Front", src: "/images/buttons-netsmart-wifi-1.png" },
-            { id: 2, alt: "Netsmart Wi-Fi Call Station Side", src: "/images/buttons-netsmart-wifi-2.png" },
-            { id: 3, alt: "Netsmart Wi-Fi Wall Plate with Pendant", src: "/images/buttons-netsmart-wifi-3.png" }
+            { id: 1, alt: "Netsmart Wi-Fi Call Station Front", src: btnWifiL },
+            { id: 2, alt: "Netsmart Wi-Fi Call Station Side", src: btnWifiO },
+            { id: 3, alt: "Netsmart Wi-Fi Wall Plate with Pendant", src: btnWifiL }
         ],
         description: "The Wi-Fi Netsmart call station provides independent call, assist, and cancel buttons, optionally with 3 auxiliary sockets. Modules are assembled on a one gang plastic plate for wall mounting. A red reassurance LED illuminates when a call is made. Pressing the cancel button resets the call and extinguishes the LED. Suitable for patient rooms and other areas requiring a cancel function.",
         features: [
@@ -260,9 +321,9 @@ export const products: Product[] = [
         productType: "Wet Area",
         productName: "Buttons Wet Area – Latching and Momentary",
         images: [
-            { id: 1, alt: "Wet Area Call Station Front", src: "/images/buttons-wet-1.png" },
-            { id: 2, alt: "Wet Area Call Station Back", src: "/images/buttons-wet-2.png" },
-            { id: 3, alt: "Wet Area Wall Plate", src: "/images/buttons-wet-3.png" }
+            { id: 1, alt: "Wet Area Call Station Front", src: btnWetB },
+            { id: 2, alt: "Wet Area Call Station Back", src: btnWetM },
+            { id: 3, alt: "Wet Area Wall Plate", src: btnWetN }
         ],
         description: "The Hooded Wet Area Call/Cancel Station is designed for areas exposed to water, such as toilets or bathrooms. The call point is fitted with a sealing gasket to prevent water penetration. Both momentary and latching versions are available.",
         features: [
@@ -297,9 +358,9 @@ export const products: Product[] = [
         productType: "Wireless",
         productName: "Buttons Wireless - SafAir",
         images: [
-            { id: 1, alt: "SafAir Wireless Call Station Front", src: "/images/buttons-safair-1.png" },
-            { id: 2, alt: "SafAir Wireless Call Station Side", src: "/images/buttons-safair-2.png" },
-            { id: 3, alt: "SafAir Wireless Wall Plate", src: "/images/buttons-safair-3.png" }
+            { id: 1, alt: "SafAir Wireless Call Station Front", src: btnSafeB },
+            { id: 2, alt: "SafAir Wireless Call Station Side", src: btnSafeD },
+            { id: 3, alt: "SafAir Wireless Wall Plate", src: btnSafeW }
         ],
         description: "The SafAir Wireless Call station is available in wet and dry area styles. It is suitable where cabling is not possible and can pair with Starsmart, Loopsmart, or Netsmart stations. Supports fault monitoring and comes with a lithium battery.",
         features: [
@@ -332,9 +393,9 @@ export const products: Product[] = [
         productType: "Duress Panic Strip",
         productName: "Duress Panic Strip Wall Mount or Under bench",
         images: [
-            { id: 1, alt: "Duress Panic Strip Front", src: "/images/duress-panic-1.png" },
-            { id: 2, alt: "Duress Panic Strip Side", src: "/images/duress-panic-2.png" },
-            { id: 3, alt: "Duress Panic Strip Installation", src: "/images/duress-panic-3.png" }
+            { id: 1, alt: "Duress Panic Strip Front", src: duress },
+            { id: 2, alt: "Duress Panic Strip Side", src: duress },
+            { id: 3, alt: "Duress Panic Strip Installation", src: duress }
         ],
         description: "The Safe Co Duress Panic Strip is supplied in lengths of 1524mm and can be cut to suit installation requirements. It can be interfaced to any alarm or security system via momentary contact closure.",
         features: [
@@ -363,9 +424,9 @@ export const products: Product[] = [
         productType: "Floor/Bed/Chair",
         productName: "Sensor Mats – Floor – Bed - Chair",
         images: [
-            { id: 1, alt: "Floor Sensor Mat", src: "/images/sensor-mats-1.png" },
-            { id: 2, alt: "Bed Sensor Mat", src: "/images/sensor-mats-2.png" },
-            { id: 3, alt: "Chair Sensor Mat", src: "/images/sensor-mats-3.png" }
+            { id: 1, alt: "Floor Sensor Mat", src: sensorMat },
+            { id: 2, alt: "Bed Sensor Mat", src: sensorMat },
+            { id: 3, alt: "Chair Sensor Mat", src: sensorMat }
         ],
         description: "Safe Co offers sensor mats for areas where fall risks or wandering residents may be present. Mats connect to Safe Co call stations and other systems. Floor mats detect stepping, bed mats detect getting out of bed, chair mats detect getting out of chair.",
         features: [
@@ -387,9 +448,9 @@ export const products: Product[] = [
         productType: "7 Colour Switched & iDementia",
         productName: "Dome Lights – 7 Colour Switched and iDementia",
         images: [
-            { id: 1, alt: "Dome Light 7 Colour", src: "/images/dome-light-1.png" },
-            { id: 2, alt: "iDementia Dome Light", src: "/images/dome-light-2.png" },
-            { id: 3, alt: "Dome Light Installation", src: "/images/dome-light-3.png" }
+            { id: 1, alt: "Dome Light 7 Colour", src: dome7 },
+            { id: 2, alt: "iDementia Dome Light", src: dome7D },
+            { id: 3, alt: "Dome Light Installation", src: dome7S }
         ],
         description: "The Unicall series 7 colour dome light has up to 4 segments, each selectable with 7 LED colours via switch settings. iDementia dome lights support up to 3 segments with intelligent input/output processing for dementia care areas. Connection is via screw terminal or RJ45 sockets.",
         features: [
@@ -417,9 +478,9 @@ export const products: Product[] = [
         productType: "NetSmart RGB",
         productName: "Dome Lights – NetSmart RGB",
         images: [
-            { id: 1, alt: "Netsmart RGB Dome Light Front", src: "/images/dome-netsmart-1.png" },
-            { id: 2, alt: "Netsmart RGB Dome Light Side", src: "/images/dome-netsmart-2.png" },
-            { id: 3, alt: "Netsmart RGB Dome Light Installation", src: "/images/dome-netsmart-3.png" }
+            { id: 1, alt: "Netsmart RGB Dome Light Front", src: domeRgb },
+            { id: 2, alt: "Netsmart RGB Dome Light Side", src: domeRgbA },
+            { id: 3, alt: "Netsmart RGB Dome Light Installation", src: domeRgb }
         ],
         description: "The Netsmart RGB dome light has 1, 2, or 3 segments. Sixteen LED colours are available. Each segment stacks calls of different priorities; the highest priority call color is shown, with multiple same-priority calls scrolling every 3 seconds. Includes intelligent input/output processing for dementia care areas.",
         features: [
@@ -444,9 +505,9 @@ export const products: Product[] = [
         productType: "Beacon",
         productName: "RTLS Beacon",
         images: [
-            { id: 1, alt: "RTLS Ceiling Mount Beacon", src: "/images/rtls-beacon-1.png" },
-            { id: 2, alt: "RTLS Beacon Top View", src: "/images/rtls-beacon-2.png" },
-            { id: 3, alt: "RTLS Beacon Installation", src: "/images/rtls-beacon-3.png" }
+            { id: 1, alt: "RTLS Ceiling Mount Beacon", src: rtlsBeacon },
+            { id: 2, alt: "RTLS Beacon Top View", src: rtlsBeacon },
+            { id: 3, alt: "RTLS Beacon Installation", src: rtlsBeacon }
         ],
         description: "The Unicall RTLS Beacon is ceiling mounted for room location accuracy in duress or asset tracking. Dual technology RF and IR receivers maximize tracking accuracy. Wireless pendants can pair directly for wandering patient tracking or site-wide locating.",
         features: [
@@ -472,9 +533,9 @@ export const products: Product[] = [
         productType: "Silicon Pendant",
         productName: "Pendants",
         images: [
-            { id: 1, alt: "Blue Single Button Pendant", src: "/images/pendant-1.png" },
-            { id: 2, alt: "Blue Dual Button Pendant", src: "/images/pendant-2.png" },
-            { id: 3, alt: "Grey Dual Button Pendant", src: "/images/pendant-3.png" }
+            { id: 1, alt: "Blue Single Button Pendant", src: pendantD },
+            { id: 2, alt: "Blue Dual Button Pendant", src: pendantK },
+            { id: 3, alt: "Grey Dual Button Pendant", src: pendantS }
         ],
         description: "The Safe Co Silicon Pendant is robust and hygienic, available in single or dual button versions. Buttons include Braille for nurse call and light switch. Ergonomic and dip sterilisable, constructed from anti-bacterial materials.",
         features: [
@@ -498,9 +559,9 @@ export const products: Product[] = [
         productType: "Entertainment Handset",
         productName: "Handset Entertainment",
         images: [
-            { id: 1, alt: "Entertainment Handset Standard", src: "/images/handset-1.png" },
-            { id: 2, alt: "Entertainment Handset Smart TV", src: "/images/handset-2.png" },
-            { id: 3, alt: "Entertainment Socket Intelligent", src: "/images/handset-3.png" }
+            { id: 1, alt: "Entertainment Handset Standard", src: handset },
+            { id: 2, alt: "Entertainment Handset Smart TV", src: handsetS },
+            { id: 3, alt: "Entertainment Socket Intelligent", src: handset }
         ],
         description: "The Safe Co entertainment handset allows patient control of nurse call, light switch, and in-built torch. Compatible with modern TV systems. Includes speaker, earphone socket, backlit buttons, and secure cradle.",
         features: [
@@ -527,9 +588,9 @@ export const products: Product[] = [
         productType: "LED / Monitor",
         productName: "Annunciators",
         images: [
-            { id: 1, alt: "Annunciator LED Dot Matrix", src: "/images/annunciator-1.png" },
-            { id: 2, alt: "Annunciator Monitor", src: "/images/annunciator-2.png" },
-            { id: 3, alt: "Annunciator Installation", src: "/images/annunciator-3.png" }
+            { id: 1, alt: "Annunciator LED Dot Matrix", src: annunciator },
+            { id: 2, alt: "Annunciator Monitor", src: annunciatorD },
+            { id: 3, alt: "Annunciator Installation", src: annunciator }
         ],
         description: "Safe Co Annunciators are available as LED 13 character dot matrix or 24”-65” monitors. Displays highest priority calls, alternating multiple same-priority calls every 2 seconds. Colors indicate call type.",
         features: [
@@ -550,9 +611,9 @@ export const products: Product[] = [
         productType: "Unicall NIO",
         productName: "Controllers – Unicall NIO",
         images: [
-            { id: 1, alt: "Unicall NIO Controller Front", src: "/images/unicall-nio-1.png" },
-            { id: 2, alt: "Unicall NIO Controller Side", src: "/images/unicall-nio-2.png" },
-            { id: 3, alt: "Unicall NIO Controller Rack Mounted", src: "/images/unicall-nio-3.png" }
+            { id: 1, alt: "Unicall NIO Controller Front", src: annunciator },
+            { id: 2, alt: "Unicall NIO Controller Side", src: annunciator },
+            { id: 3, alt: "Unicall NIO Controller Rack Mounted", src: annunciator }
         ],
         description: "Safe Co Unicall system provides a robust IP Hybrid dual network Nurse call solution. Networking between controllers can be via Unicall network, TCP/IP, or both, ensuring complete redundancy and continuous notification of active alarms.",
         features: [
@@ -582,9 +643,9 @@ export const products: Product[] = [
         productType: "Waterproof / Legacy",
         productName: "Pagers",
         images: [
-            { id: 1, alt: "Waterproof Pager", src: "/images/pager-1.png" },
-            { id: 2, alt: "Legacy Pager", src: "/images/pager-2.png" },
-            { id: 3, alt: "Pager Charging Station", src: "/images/pager-3.png" }
+            { id: 1, alt: "Waterproof Pager", src: pager },
+            { id: 2, alt: "Legacy Pager", src: pager },
+            { id: 3, alt: "Pager Charging Station", src: pager }
         ],
         description: "Safe Co waterproof pager combines POCSAG technology with modern design. Smaller, lighter, sealed, rechargeable, and compatible with single, 5-way, or 10-way charging stations. Typical battery life 5 days.",
         features: [
@@ -620,9 +681,9 @@ export const products: Product[] = [
         productType: "QP Messenger",
         productName: "Mobile Apps – QP Messenger",
         images: [
-            { id: 1, alt: "QP Messenger Android", src: "/images/qp-android.png" },
-            { id: 2, alt: "QP Messenger iOS", src: "/images/qp-ios.png" },
-            { id: 3, alt: "QP Messenger Notification", src: "/images/qp-notification.png" }
+            { id: 1, alt: "QP Messenger Android", src: mobileApp },
+            { id: 2, alt: "QP Messenger iOS", src: qpAnalysis },
+            { id: 3, alt: "QP Messenger Notification", src: mobileApp }
         ],
         description: "QP Messenger app is available on Android and Apple platforms. Works via Wi-Fi to connect to Quickpass server for live event notifications. Users can assign zones/wards and call back rooms where calls were raised. Can use mobile network or SIP endpoint.",
         features: [
@@ -644,9 +705,9 @@ export const products: Product[] = [
         productType: "Real Time Locating Systems",
         productName: "Real Time Locating Systems (RTLS)",
         images: [
-            { id: 1, alt: "Quad Tech RTLS Emergency Tag", src: "/images/rtls-tag-1.png" },
-            { id: 2, alt: "RTLS Charging Station", src: "/images/rtls-charging-2.png" },
-            { id: 3, alt: "RTLS in Use", src: "/images/rtls-use-3.png" }
+            { id: 1, alt: "Quad Tech RTLS Emergency Tag", src: rtlsTag },
+            { id: 2, alt: "RTLS Charging Station", src: rtlsTagA },
+            { id: 3, alt: "RTLS in Use", src: rtlsTag }
         ],
         description: "Safe Co RTLS solutions include positional duress, staff, patient, and asset tracking. Uses quad Wi-Fi, BLE, RF, and IR technology for area-to-room accuracy. Integrates with wireless messaging and graphical displays to reduce Total Cost of Ownership in healthcare facilities.",
         features: [
@@ -668,9 +729,9 @@ export const products: Product[] = [
         productType: "Keypad / Sensor",
         productName: "Dementia Care",
         images: [
-            { id: 1, alt: "Dementia Arming Keypad", src: "/images/dementia-keypad-1.png" },
-            { id: 2, alt: "Curtain Motion Sensor", src: "/images/dementia-sensor-2.png" },
-            { id: 3, alt: "Wide Motion Sensor", src: "/images/dementia-sensor-3.png" }
+            { id: 1, alt: "Dementia Arming Keypad", src: dementia },
+            { id: 2, alt: "Curtain Motion Sensor", src: dementia },
+            { id: 3, alt: "Wide Motion Sensor", src: dementia }
         ],
         description: "Dementia care units provide automation and unobtrusive monitoring within a room. Supports reed switches, motion sensors, bed mats, and floor mats. Enables staff to arm/disarm the system and monitor resident activity, including wandering alerts.",
         features: [
@@ -698,9 +759,9 @@ export const products: Product[] = [
         productType: "Quickpass Messenger",
         productName: "Software and Integration – Quickpass Messenger",
         images: [
-            { id: 1, alt: "Quickpass Software Dashboard", src: "/images/quickpass-1.png" },
-            { id: 2, alt: "Quickpass Reporting Screen", src: "/images/quickpass-2.png" },
-            { id: 3, alt: "Quickpass Integration Overview", src: "/images/quickpass-3.png" }
+            { id: 1, alt: "Quickpass Software Dashboard", src: software },
+            { id: 2, alt: "Quickpass Reporting Screen", src: software },
+            { id: 3, alt: "Quickpass Integration Overview", src: software }
         ],
         description: "Quickpass logging and paging system provides SQL database logging, site linking, exportable/customisable data, and integration with various alarm and nurse call systems. Supports advertising on monitors and multi-site comparison.",
         features: [

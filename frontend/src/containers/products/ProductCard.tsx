@@ -8,8 +8,21 @@ interface ProductCardProps {
     product: Product;
 }
 
+import { useState, useEffect } from 'react';
+
 const ProductCard = ({ product }: ProductCardProps) => {
     const slug = product.productName.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    useEffect(() => {
+        if (product.images.length <= 1) return;
+
+        const interval = setInterval(() => {
+            setCurrentImageIndex((prev) => (prev + 1) % product.images.length);
+        }, 3000); // Change image every 3 seconds
+
+        return () => clearInterval(interval);
+    }, [product.images.length]);
 
     return (
         <motion.div
@@ -19,12 +32,38 @@ const ProductCard = ({ product }: ProductCardProps) => {
             className="group bg-white rounded-3xl p-5 flex flex-col gap-5 border border-[#0C6E6D]/5 hover:border-[#0C6E6D]/20 transition-all duration-500 shadow-sm hover:shadow-2xl hover:-translate-y-2"
         >
             <Link to={`/products/${slug}`} className="relative aspect-square bg-[#F8FBFA] rounded-2xl overflow-hidden flex items-center justify-center p-8 group-hover:bg-white transition-colors duration-500">
-                <img
-                    src={product.images[0]?.src || ''}
-                    alt={product.images[0]?.alt || product.productName}
-                    className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700 ease-out"
-                />
+                {product.images.length > 1 ? (
+                    <div className="absolute inset-0 p-8">
+                        {product.images.map((img, idx) => (
+                            <img
+                                key={img.id}
+                                src={img.src}
+                                alt={img.alt || product.productName}
+                                className={`absolute inset-0 w-full h-full object-contain p-8 transition-opacity duration-1000 ease-in-out ${idx === currentImageIndex ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+                                    }`}
+                            />
+                        ))}
+                    </div>
+                ) : (
+                    <img
+                        src={product.images[0]?.src || ''}
+                        alt={product.images[0]?.alt || product.productName}
+                        className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700 ease-out"
+                    />
+                )}
                 <div className="absolute inset-0 bg-[#053131]/0 group-hover:bg-[#053131]/5 transition-colors duration-500"></div>
+
+                {product.images.length > 1 && (
+                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-1 z-10">
+                        {product.images.map((_, idx) => (
+                            <div
+                                key={idx}
+                                className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${idx === currentImageIndex ? 'bg-[#0C6E6D] w-3' : 'bg-[#0C6E6D]/30'
+                                    }`}
+                            />
+                        ))}
+                    </div>
+                )}
             </Link>
 
             <div className="flex flex-col gap-3 flex-grow">
