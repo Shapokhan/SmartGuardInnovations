@@ -80,9 +80,9 @@ const ProductCard = ({ product }: ProductCardProps) => {
                 <div className="mt-auto pt-5 flex items-center justify-between">
                     <Link
                         to={`/products/${slug}`}
-                        className="text-[#0C6E6D] text-[10px] font-bold uppercase tracking-[0.2em] flex items-center gap-2 group/more"
+                        className="text-[#0C6E6D] sm:text-[13px] text-[10px] font-bold uppercase tracking-[0.2em] flex items-center gap-2 group/more"
                     >
-                        Learn More
+                        More Info
                         <div className="w-8 h-8 rounded-full bg-[#0C6E6D]/10 flex items-center justify-center group-hover/more:bg-[#053131] group-hover/more:text-white transition-all duration-300">
                             <ArrowRight size={14} />
                         </div>
