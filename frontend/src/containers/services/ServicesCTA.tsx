@@ -6,13 +6,13 @@ const ServicesCTA = () => {
         <div className="mt-20 bg-[#053131] rounded-[50px] p-8 sm:p-16 relative overflow-hidden text-center">
             <div className="relative z-10 max-w-2xl mx-auto space-y-6">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
-                    Ready to <span className="text-[#7AFFC7] font-soka font-light">Transform</span> Your Business?
+                    Ask Our <span className="text-[#7AFFC7] font-soka font-light">Experts!</span>
                 </h2>
                 <p className="text-gray-300 text-lg">
-                    Let's discuss how our services can help you reach new heights.
+                    Looking for Product Advice or Technical Help? We're here to assist you.
                 </p>
                 <Button className="bg-[#7AFFC7] hover:bg-white text-[#053131] rounded-full px-10 py-6 text-sm font-black uppercase tracking-[0.2em] shadow-lg hover:shadow-[#7AFFC7]/20 transition-all transform hover:scale-105">
-                    Get In Touch Now
+                    Contact an Expert
                 </Button>
             </div>
 

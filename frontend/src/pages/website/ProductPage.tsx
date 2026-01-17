@@ -5,12 +5,14 @@ import Footer from '@/components/website/shared/Footer';
 import bannerImg from '@/assets/images/banner.png';
 import ProductGrid from '@/containers/products/ProductGrid';
 import { motion } from 'framer-motion';
+import ScrollToTop from '@/components/website/shared/ScrollToTop';
 
 const ProductPage = () => {
     const [searchQuery, setSearchQuery] = useState<string>('');
 
     return (
         <div className="min-h-screen bg-[#F8FBFA] font-sans selection:bg-[#0C6E6D] selection:text-white">
+            <ScrollToTop />
             <Header />
 
             <main className="pt-[110px] sm:pt-[130px] lg:pt-[140px]">

@@ -16,17 +16,30 @@ const ServicesSection = () => {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="text-center max-w-2xl mx-auto mb-10"
                 >
-                    <h2 className="text-3xl sm:text-4xl  font-bold text-[#053131] leading-tight mb-6">
-                        <span className="font-bold text-[#053131]">Trusted</span> <span className="font-light font-soka">Marketing</span> <span className="font-bold text-[#053131]">Consulting</span><br />
-                        <span className="font-light font-soka">agency for business.</span>
+                    <h2 className="text-3xl sm:text-4xl font-bold text-[#053131] leading-tight mb-6">
+                        <span className="font-bold text-[#053131]">Premium</span> <span className="font-light font-soka">Technical</span> <span className="font-bold text-[#053131]">Services</span><br />
+                        <span className="font-light font-soka">for your peace of mind.</span>
                     </h2>
                     <p className="text-gray-400">
-                        Experience healthcare you can trust. Our dedicated team provides compassionate, high-quality care.
+                        SmartGuard Innovations provides dedicated technical support and expert consultation to ensure your communication systems are always operational.
                     </p>
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                    {[1, 2, 3].map((_, idx) => (
+                    {[
+                        {
+                            title: "After Hours Emergency",
+                            desc: "Our rapid-response team is available for critical system failures after business hours, ensuring your facility's heartbeat never stops."
+                        },
+                        {
+                            title: "Solution Consultation",
+                            desc: "Expert guidance on designing and integrating low-voltage electronic systems tailored to your facility's specific communication and security needs."
+                        },
+                        {
+                            title: "Intercom Assessment",
+                            desc: "Professional evaluation, repair, and modernization of intercom systems to maintain clear and secure communication channels in any building."
+                        }
+                    ].map((service, idx) => (
                         <motion.div
                             key={idx}
                             initial={{ y: 60, opacity: 0 }}
@@ -36,10 +49,10 @@ const ServicesSection = () => {
                             className="bg-white rounded-[40px] p-5 sm:p-8 border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 group"
                         >
                             <div className="flex items-center justify-between mb-5">
-                                <div className="sm:size-20 size-14  bg-[#053131] rounded-full flex items-center justify-center group-hover:bg-[#0C6E6D] transition-colors">
-                                    <img src={trustIcon} className="w-full p-2  transition-all" alt="icon" />
+                                <div className="sm:size-20 size-14 bg-[#053131] rounded-full flex items-center justify-center group-hover:bg-[#0C6E6D] transition-colors">
+                                    <img src={trustIcon} className="w-full p-2 transition-all" alt="icon" />
                                 </div>
-                                <h3 className="sm:text-2xl text-xl font-black text-[#053131] group-hover:text-[#0C6E6D] transition-colors italic">Lorem Ipsum</h3>
+                                <h3 className="sm:text-xl text-lg font-black text-[#053131] group-hover:text-[#0C6E6D] transition-colors italic flex-1 px-4">{service.title}</h3>
                                 <div className="w-10 h-10 bg-gray-50 rounded-full flex items-center justify-center group-hover:bg-[#0C6E6D] group-hover:text-white transition-all">
                                     <span className="text-xl">→</span>
                                 </div>
@@ -48,10 +61,10 @@ const ServicesSection = () => {
                             <div className="h-px bg-gray-100 w-full mb-5"></div>
 
                             <p className="text-gray-400 text-sm leading-relaxed mb-5">
-                                Experience healthcare you can trust. Our dedicated team provides compassionate, high-quality care.
+                                {service.desc}
                             </p>
 
-                            <div className="rounded-[30px] overflow-hidden ">
+                            <div className="rounded-[30px] overflow-hidden">
                                 <img src={cardImg} alt="service" className="w-full h-full object-[100%_100%] group-hover:scale-110 transition-transform duration-700" />
                             </div>
                         </motion.div>

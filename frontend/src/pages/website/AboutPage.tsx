@@ -5,15 +5,20 @@ import contactBanner from '@/assets/images/contact-us.png';
 import AboutIntro from '@/containers/about/AboutIntro';
 import AboutMethodology from '@/containers/about/AboutMethodology';
 import AboutTeamProcess from '@/containers/about/AboutTeamProcess';
+import AboutSolutions from '@/containers/about/AboutSolutions';
+import AboutTeam from '@/containers/about/AboutTeam';
+import AboutPartners from '@/containers/about/AboutPartners';
+import ScrollToTop from '@/components/website/shared/ScrollToTop';
 
 const AboutPage = () => {
     return (
         <div className="min-h-screen bg-slate-50 font-sans selection:bg-[#0C6E6D] selection:text-white">
+            <ScrollToTop />
             <Header />
 
             <main className="pt-[110px] sm:pt-[130px] lg:pt-[140px]">
                 {/* Hero / Banner Section */}
-                <div className="relative h-[250px] sm:rounded-[100px] mt-7 sm:mx-5 mx-0 md:h-[450px] flex items-center justify-center overflow-hidden">
+                <div className="relative h-[250px] sm:rounded-[100px] sm:mt-7 mt-0 sm:mx-5 mx-0 md:h-[450px] flex items-center justify-center overflow-hidden">
                     <img
                         src={contactBanner}
                         alt="About Us Banner"
@@ -35,9 +40,15 @@ const AboutPage = () => {
                 {/* About Content Sections */}
                 <AboutIntro />
 
+                <AboutPartners />
+
                 <AboutMethodology />
 
+                <AboutSolutions />
+
                 <AboutTeamProcess />
+
+                <AboutTeam />
 
                 {/* Just adding some extra space before footer */}
                 <div className="py-10"></div>

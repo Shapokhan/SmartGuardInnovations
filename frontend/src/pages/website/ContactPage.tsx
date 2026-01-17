@@ -5,15 +5,17 @@ import contactBanner from '@/assets/images/contact-us.png';
 import contactSide from '@/assets/images/contact-us-side-img.png';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { Button } from '@/components/ui/button';
+import ScrollToTop from '@/components/website/shared/ScrollToTop';
 
 const ContactPage = () => {
     return (
         <div className="min-h-screen bg-slate-50 font-sans selection:bg-[#0C6E6D] selection:text-white">
+            <ScrollToTop />
             <Header />
 
             <main className="pt-[110px] sm:pt-[130px] lg:pt-[140px]">
                 {/* Hero / Banner Section */}
-                <div className="relative h-[250px] sm:rounded-[100px] mt-7 sm:mx-5 mx-0 md:h-[450px] flex items-center justify-center overflow-hidden">
+                <div className="relative h-[250px] sm:rounded-[100px] sm:mt-7 mt-0 sm:mx-5 mx-0 md:h-[450px] flex items-center justify-center overflow-hidden">
                     <img
                         src={contactBanner}
                         alt="Contact Banner"
@@ -47,11 +49,11 @@ const ContactPage = () => {
 
                                 <div className="space-y-3 mb-6">
                                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#053131] leading-tight">
-                                        <span className="font-bold">Trusted</span> <span className="font-light font-soka text-[#0C6E6D]">Marketing</span><br />
-                                        <span className="font-bold">Consulting</span> <span className="font-light font-soka text-[#0C6E6D]">agency for business.</span>
+                                        <span className="font-bold">Expert</span> <span className="font-light font-soka text-[#0C6E6D]">Product Advice</span><br />
+                                        <span className="font-bold">& Technical</span> <span className="font-light font-soka text-[#0C6E6D]">Support</span>
                                     </h2>
                                     <p className="text-gray-500 text-sm sm:text-base max-w-2xl leading-relaxed">
-                                        Partner with our expert consultants today. Whether you have a specific project in mind or just want to explore possibilities, we're here to help you lead.
+                                        Partner with our technical experts today. Whether you have a specific project requirement or need help with system maintenance, we're here to provide the right solution.
                                     </p>
                                 </div>
 
