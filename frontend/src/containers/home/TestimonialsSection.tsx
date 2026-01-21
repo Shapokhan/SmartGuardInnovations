@@ -5,21 +5,21 @@ import { motion } from 'framer-motion';
 
 const testimonials = [
     {
-        name: "Create Account",
-        role: "Lorem Ipsum",
-        content: "Experience healthcare you can trust. Our dedicated team provides compassionate, high-quality care. Experience healthcare you can trust. Our dedicated team provides compassionate, high-quality care.",
+        name: "Dr. Sarah Johnson",
+        role: "Medical Director",
+        content: "SmartGuard's nurse call system has transformed how our department operates. The reliability and ease of use have significantly reduced response times for our staff.",
         rating: 5
     },
     {
-        name: "Create Account",
-        role: "Lorem Ipsum",
-        content: "Experience healthcare you can trust. Our dedicated team provides compassionate, high-quality care. Experience healthcare you can trust. Our dedicated team provides compassionate, high-quality care.",
+        name: "James Wilson",
+        role: "Facility Manager",
+        content: "We've been using their intercom and security solutions for over two years now. The integration is seamless and the after-hours support is exceptional.",
         rating: 5
     },
     {
-        name: "Create Account",
-        role: "Lorem Ipsum",
-        content: "Experience healthcare you can trust. Our dedicated team provides compassionate, high-quality care. Experience healthcare you can trust. Our dedicated team provides compassionate, high-quality care.",
+        name: "Emma Thompson",
+        role: "Aged Care Administrator",
+        content: "The specialized solutions for aged care facilities are exactly what we needed. Reliable, patient-friendly, and cost-effective. Highly recommended!",
         rating: 5
     }
 ];
@@ -36,11 +36,11 @@ const TestimonialsSection = () => {
                     className="text-center max-w-2xl mx-auto mb-10"
                 >
                     <h2 className="text-3xl sm:text-4xl  font-bold text-[#053131] leading-tight mb-6 text-center">
-                        <span className="font-bold">Trusted</span> <span className="font-light font-soka">Marketing</span> <span className="font-bold">Consulting</span><br />
-                        <span className="font-light font-soka">agency for business.</span>
+                        <span className="font-bold">What Our</span> <span className="font-light font-soka text-[#0C6E6D]">Clients Say</span><br />
+                        <span className="font-light">Trusted by Professionals</span>
                     </h2>
                     <p className="text-gray-400">
-                        Experience healthcare you can trust. Our dedicated team provides compassionate, high-quality care.
+                        Reliable communication solutions that help healthcare professionals provide exceptional care to their patients every day.
                     </p>
                 </motion.div>
 

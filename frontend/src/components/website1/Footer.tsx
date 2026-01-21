@@ -10,7 +10,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-6">
               <div className="w-8 h-8 bg-primary rounded-sm transform rotate-45 flex items-center justify-center">
-                 <div className="w-4 h-4 bg-white/20"></div>
+                <div className="w-4 h-4 bg-white/20"></div>
               </div>
               <span className="font-bold text-xl text-white">SmartGuard</span>
             </div>
@@ -40,7 +40,7 @@ export function Footer() {
               <li><Link to="/" className="hover:text-primary transition-colors">Home</Link></li>
               <li><Link to="/about" className="hover:text-primary transition-colors">About Us</Link></li>
               <li><Link to="/products" className="hover:text-primary transition-colors">Products</Link></li>
-              <li><Link to="/contact" className="hover:text-primary transition-colors">Contact Us</Link></li>
+              <li><Link to="/contact-us" className="hover:text-primary transition-colors">Contact Us</Link></li>
               <li><Link to="/support" className="hover:text-primary transition-colors">Support</Link></li>
             </ul>
           </div>
