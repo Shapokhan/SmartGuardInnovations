@@ -6,7 +6,9 @@ import path from 'path';
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   build: {
-    outDir: 'dist'
+    outDir: 'dist',
+    // Optional: Enable source maps for debugging
+    sourcemap: true,
   },
   server: {
     allowedHosts: true,
@@ -16,4 +18,8 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  // Explicitly set environment variables prefix
+  envPrefix: 'VITE_',
+  // Ensure correct base path
+  base: '/',
 });
