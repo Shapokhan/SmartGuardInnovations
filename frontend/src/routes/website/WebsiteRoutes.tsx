@@ -1,11 +1,10 @@
-
-import { Route } from "react-router-dom";
-import LandingPage from "@/pages/website/LandingPage";
-import ContactPage from "@/pages/website/ContactPage";
-import ServicesPage from "@/pages/website/ServicesPage";
-import AboutPage from "@/pages/website/AboutPage";
-import ProductPage from "@/pages/website/ProductPage";
-import ProductDetailPage from "@/pages/website/ProductDetailPage";
+import { Route } from 'react-router-dom';
+import LandingPage from '@/pages/website/LandingPage';
+import ContactPage from '@/pages/website/ContactPage';
+import ServicesPage from '@/pages/website/ServicesPage';
+import AboutPage from '@/pages/website/AboutPage';
+import ProductPage from '@/pages/website/ProductPage';
+import ProductDetailPage from '@/pages/website/ProductDetailPage';
 
 import { WebsiteLayout } from '@/components/website1/Layout';
 import { Home } from '@/pages/website1/Home';
