@@ -1,5 +1,4 @@
 
-import { Button } from '@/components/ui/button';
 import sideImg from '@/assets/images/about-us-section.png';
 import smallImg from '@/assets/images/sciencelab.png';
 import { FaCheckCircle } from 'react-icons/fa';
@@ -22,47 +21,50 @@ const AboutIntro = () => {
                     {/* Right Side: Content */}
                     <div className="w-full lg:w-1/2 space-y-8">
                         <div>
-                            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#053131] leading-tight mb-6">
-                                <span className="font-bold">Trusted</span> <span className="font-light font-soka text-[#0C6E6D]">Marketing Consulting</span><br />
-                                <span className="font-light">Marketing</span>
+                            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#053131] leading-tight mb-6">
+                                <span className="text-[#0C6E6D]">Comtel Technologies</span><br />
+                                <span className="font-light italic text-2xl md:text-3xl">A Legacy of Excellence since 1968</span>
                             </h2>
                             <p className="text-gray-500 leading-relaxed text-lg">
-                                Experience healthcare you can trust. Our dedicated team provides compassionate, high-quality care.
+                                Comtel Technologies (Aust) Pty Ltd (originally Comtel Pty Ltd) was incorporated in Victoria in 1968 to distribute, install and maintain Nurse Call, Inter-communications and Public Address equipment. Over the decades, we have become established in the Health Care Industry as a premier supplier of Australian-made Nurse Call and Communication systems.
                             </p>
-                        </div>
-
-                        {/* Buttons */}
-                        {/* Buttons */}
-                        <div className="flex flex-nowrap sm:flex-wrap gap-2 sm:gap-4 overflow-x-auto sm:overflow-visible pb-2 sm:pb-0 hide-scrollbar snap-x">
-                            <Button className="bg-[#053131] hover:bg-[#0C6E6D] text-white rounded-full px-4 py-2 text-[10px] sm:px-8 sm:py-6 sm:text-sm font-bold shadow-lg transition-all flex-shrink-0 snap-start whitespace-nowrap">
-                                View all Services
-                            </Button>
-                            <Button className="bg-[#E6F4F4] hover:bg-[#0C6E6D] text-[#053131] hover:text-white rounded-full px-4 py-2 text-[10px] sm:px-8 sm:py-6 sm:text-sm font-bold transition-all flex-shrink-0 snap-start whitespace-nowrap">
-                                View all Services
-                            </Button>
-                            <Button className="bg-[#E6F4F4] hover:bg-[#0C6E6D] text-[#053131] hover:text-white rounded-full px-4 py-2 text-[10px] sm:px-8 sm:py-6 sm:text-sm font-bold transition-all flex-shrink-0 snap-start whitespace-nowrap">
-                                View all Services
-                            </Button>
+                            <p className="text-gray-500 leading-relaxed mt-4">
+                                We specialise in a range of low-voltage equipment & systems specifically for the Aged & Health Care Industries, although our quality solutions are also widely used in Educational, Correctional, Commercial, and Residential sectors.
+                            </p>
                         </div>
 
                         {/* Text Points & Small Image Grid */}
                         <div className="grid sm:grid-cols-2 gap-8 items-center mt-8">
                             {/* Small Image */}
-                            <div className="rounded-[40px] overflow-hidden shadow-lg h-[200px] w-full relative">
-                                <img src={smallImg} alt="Lab Work" className="w-full h-full object-[100%_100%]" />
+                            <div className="rounded-[40px] overflow-hidden shadow-lg h-[220px] w-full relative group">
+                                <img src={smallImg} alt="Lab Work" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                             </div>
 
                             {/* Points */}
                             <div className="space-y-4">
-                                {[1, 2, 3, 4].map((i) => (
+                                {[
+                                    "40+ years of quality solutions",
+                                    "High level of product reliability",
+                                    "Seamless system integration",
+                                    "Specialised health care knowledge"
+                                ].map((text, i) => (
                                     <div key={i} className="flex items-center gap-3">
-                                        <div className="min-w-6 min-h-6 text-[#053131]">
+                                        <div className="min-w-6 min-h-6 text-[#0C6E6D]">
                                             <FaCheckCircle className="w-full h-full" />
                                         </div>
-                                        <p className="text-[#053131] font-bold text-sm">Experience healthcare you can.</p>
+                                        <p className="text-[#053131] font-bold text-sm tracking-tight">{text}</p>
                                     </div>
                                 ))}
                             </div>
+                        </div>
+
+                        <div className="pt-4 space-y-4">
+                            <p className="text-gray-500 leading-relaxed">
+                                Our aim at Comtel is to provide our customers with fully integrated electronic solutions, ensuring a high level of product reliability with the assurance that systems will work together as one complete solution.
+                            </p>
+                            <p className="text-gray-500 leading-relaxed italic border-l-4 border-[#0C6E6D] pl-4">
+                                Providing peace of mind through enhanced security and smarter communication since 1968.
+                            </p>
                         </div>
                     </div>
                 </div>

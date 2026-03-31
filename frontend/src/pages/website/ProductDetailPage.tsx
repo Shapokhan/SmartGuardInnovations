@@ -4,6 +4,7 @@ import { products } from '@/data/productdata';
 import Header from '@/components/website/shared/Header';
 import Footer from '@/components/website/shared/Footer';
 import { motion } from 'framer-motion';
+import ScrollToTop from '@/components/website/shared/ScrollToTop';
 import { ArrowLeft, ArrowRight, CheckCircle2, Package, Ruler, Info } from 'lucide-react';
 import { useState, useMemo } from 'react';
 
@@ -27,6 +28,7 @@ const ProductDetailPage = () => {
 
     return (
         <div className="min-h-screen bg-[#F8FBFA] font-sans">
+            <ScrollToTop />
             <Header />
 
             <main className="pt-[110px] sm:pt-[130px] lg:pt-[150px] pb-20">

@@ -4,10 +4,26 @@ import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 
 const solutions = [
-    { id: "01", title: "Create Account" },
-    { id: "02", title: "Create Account" },
-    { id: "03", title: "Create Account" },
-    { id: "04", title: "Create Account" }
+    {
+        id: "01",
+        title: "Healthcare Systems",
+        desc: "Advanced nurse call and patient monitoring systems designed to improve clinical workflows and enhance patient safety in hospitals and aged care facilities."
+    },
+    {
+        id: "02",
+        title: "Residential Solutions",
+        desc: "Integrated security and automation systems for homes, providing families with peace of mind and smart, seamless control over their living environment."
+    },
+    {
+        id: "03",
+        title: "Wi-Fi Solutions",
+        desc: "High-performance wireless networking solutions optimized for critical environments, ensuring reliable connectivity for both staff and residents."
+    },
+    {
+        id: "04",
+        title: "Apartment Solutions",
+        desc: "Tailored communication and access control systems for multi-residential buildings, enhancing security and convenience for modern urban living."
+    }
 ];
 
 const SolutionsSection = () => {
@@ -39,19 +55,19 @@ const SolutionsSection = () => {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="text-center max-w-2xl mx-auto mb-5 pt-10"
                 >
-                    <h2 className="text-3xl sm:text-4xl  font-bold text-[#053131] leading-tight mb-6">
-                        <span className="font-bold">Trusted</span> <span className="font-light font-soka">Marketing</span> <span className="font-bold">Consulting</span><br />
-                        <span className="font-light font-soka">agency for business.</span>
+                    <h2 className="text-3xl sm:text-4xl font-bold text-[#053131] leading-tight mb-6">
+                        <span className="font-bold">Our</span> <span className="font-light font-soka">Expert</span> <span className="font-bold">Solutions</span><br />
+                        <span className="font-light font-soka">Tailored for Every Need.</span>
                     </h2>
-                    <p className="text-gray-400">
-                        Experience healthcare you can trust. Our dedicated team provides compassionate, high-quality care.
+                    <p className="text-gray-400 text-xs sm:text-sm max-w-xl mx-auto">
+                        SmartGuard Innovations specializes in delivering high-reliability communication and security systems across diverse sectors, ensuring seamless integration and cost-effective performance.
                     </p>
                 </motion.div>
 
                 {/* Timeline Grid */}
                 <div className="relative">
                     {/* Horizontal Line background */}
-                    <div className="absolute top-[60%]  rounded-full left-[5%] w-[90%] mx-auto h-1 bg-[#053131] -z-0 hidden md:block"></div>
+                    <div className="absolute top-[58%]  rounded-full left-[5%] w-[90%] mx-auto h-1 bg-[#053131] -z-0 hidden md:block"></div>
 
                     <div className="grid grid-cols-1 p-3 md:grid-cols-4 md:gap-10 gap-5 relative z-10">
                         {solutions.map((item, idx) => (
@@ -87,8 +103,8 @@ const SolutionsSection = () => {
                                     className="text-center space-y-4"
                                 >
                                     <h3 className="text-xl font-bold text-[#053131]">{item.title}</h3>
-                                    <p className="text-sm text-gray-400 leading-relaxed">
-                                        Experience healthcare you can trust. Our dedicated team provides compassionate, high-quality care.
+                                    <p className="text-[10px] sm:text-[11px] text-gray-400 leading-relaxed max-w-[200px] mx-auto">
+                                        {item.desc}
                                     </p>
                                 </motion.div>
                             </div>
